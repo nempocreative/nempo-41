@@ -138,6 +138,7 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
       style={{ aspectRatio: '210 / 148', fontFamily: "'DM Sans', 'Inter', sans-serif" }}
       aria-label="Rundown MusiComedy Night"
     >
+      <GununganGlyph className="mc-a5-watermark" />
       <header className="mc-a5-head">
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">
@@ -174,6 +175,13 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
           })}
         </tbody>
       </table>
+      <div className="mc-a5-deco" aria-hidden="true">
+        <DancerGlyph className="mc-a5-deco-figure" />
+        <WayangGlyph className="mc-a5-deco-figure" />
+        <GununganGlyph className="mc-a5-deco-mid" />
+        <WayangGlyph className="mc-a5-deco-figure mc-a5-deco-flip" />
+        <DancerGlyph className="mc-a5-deco-figure mc-a5-deco-flip" />
+      </div>
       <div className="mc-a5-social">
         {rundownBrands.map((b, i) => (
           <Fragment key={b.brand}>
