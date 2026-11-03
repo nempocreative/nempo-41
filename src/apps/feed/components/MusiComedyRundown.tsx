@@ -64,8 +64,13 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">
           <b>RUNDOWN ACARA</b>
-          <span>Rabu, 4 November 2026 · Good Story Cafe, Jl. Sudirman Copong No. 11</span>
-          <span className="mc-a5-anchor">15.00 – 23.00 WIB · patokan adzan: Ashar 14.49, Maghrib 17.47, Isya 18.56</span>
+          <span>MusiComedy Night</span>
+        </div>
+        <div className="mc-a5-info">
+          <b>Rabu, 4 November 2026</b>
+          <span>Good Story Cafe, Jl. Sudirman Copong No. 11</span>
+          <span>15.00 – 23.00 WIB</span>
+          <span className="mc-a5-anchor">Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56</span>
         </div>
       </header>
       <table className="mc-a5-table">
