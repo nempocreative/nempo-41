@@ -5,7 +5,7 @@ import logo from '@/assets/musicomedy-night-logo.png.asset.json';
 import frame from '@/assets/nempo-feed-slide-31-gamelan-frame-transparent.png.asset.json';
 import background from '@/assets/nempo-feed-slide-31-bg.jpg';
 import wayang from '@/assets/musicomedy-bumper-wayang.png';
-import video from '@/assets/musicomedy-bumper.mp4.asset.json';
+import video from '@/assets/musicomedy-bumper.mp4';
 import nempoLogo from '@/assets/nempo-bumper-logo.png.asset.json';
 
 export function MusiComedyBumper() {
@@ -18,7 +18,7 @@ export function MusiComedyBumper() {
           {playing ? <Pause /> : <Play />}
         </Button>
         <Button variant="outline" size="icon" title="Putar ulang" aria-label="Putar ulang bumper" onClick={() => { setVersion(version + 1); setPlaying(true); }}><RotateCcw /></Button>
-        <Button asChild><a href={video.url} download="MusiComedy-Night-Bumper-1080x1440.mp4"><Download />Download MP4</a></Button>
+        <Button asChild><a href={video} download="MusiComedy-Night-Bumper-1080x1440.mp4"><Download />Download MP4</a></Button>
       </div>
       <div key={version} className={`mc-bumper-stage${playing ? '' : ' is-paused'}`} aria-label="Bumper MusiComedy Night 3:4">
         <img className="mc-bumper-backdrop" src={background} alt="" />
