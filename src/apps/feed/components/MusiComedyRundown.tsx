@@ -1,8 +1,6 @@
 import { Fragment, type RefObject } from 'react';
 import { Globe, Instagram } from 'lucide-react';
 import logoAsset from '@/assets/musicomedy-night-logo.png.asset.json';
-import penariSilhouette from '@/assets/penari-silhouette.png';
-import wayangSilhouette from '@/assets/wayang-punokawan-silhouette.png';
 
 // MusiComedy Night rundown — A5 landscape paper sheet (210×148 mm) in the slide 31–33 palette.
 // Times are anchored to the adzan schedule the owner gave for 4 Nov 2026:
@@ -98,27 +96,6 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
       style={{ aspectRatio: '210 / 148', fontFamily: "'DM Sans', 'Inter', sans-serif" }}
       aria-label="Rundown MusiComedy Night"
     >
-      {/* Real penari & wayang punokawan silhouettes, printed faintly behind the paper. */}
-      <img
-        src={penariSilhouette}
-        alt=""
-        aria-hidden="true"
-        className="mc-a5-bg mc-a5-bg-penari"
-        width={645}
-        height={958}
-        loading="lazy"
-        decoding="async"
-      />
-      <img
-        src={wayangSilhouette}
-        alt=""
-        aria-hidden="true"
-        className="mc-a5-bg mc-a5-bg-wayang"
-        width={696}
-        height={964}
-        loading="lazy"
-        decoding="async"
-      />
       <header className="mc-a5-head">
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">

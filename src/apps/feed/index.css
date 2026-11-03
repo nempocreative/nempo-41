@@ -1695,10 +1695,6 @@
 .mc-a5-social-group:last-child .mc-a5-social-brand,
 .mc-a5-social-group:last-child .mc-a5-pill svg { color: #a62f78; }
 .mc-a5-foot { margin-top: 1cqw; display: flex; justify-content: space-between; gap: 2cqw; text-align: right; font-size: 1.15cqw; font-weight: 700; letter-spacing: 0.1em; color: #9a5a2c; }
-/* Cultural decoration: real penari & wayang punokawan silhouettes printed faintly behind the paper. */
-.mc-a5-bg { position: absolute; height: auto; pointer-events: none; }
-.mc-a5-bg-penari { right: 1.2cqw; bottom: 0; width: 30cqw; opacity: 0.14; }
-.mc-a5-bg-wayang { left: 1cqw; bottom: 0; width: 18cqw; opacity: 0.12; }
 .mc-a5-head, .mc-a5-table, .mc-a5-social, .mc-a5-foot { position: relative; z-index: 1; }
 /* Print: only the A5 sheet, exactly one page — app chrome stays off the paper. */
 @media print {
