@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "e84ab1e2-ab00-4a4e-8780-19ec7f598b6b",
-  "project_id": "6a2f51fb-5243-4630-9e24-bb4aedf1f305",
-  "url": "/__l5e/assets-v1/e84ab1e2-ab00-4a4e-8780-19ec7f598b6b/nempo-bumper-logo.png",
-  "r2_key": "a/v1/6a2f51fb-5243-4630-9e24-bb4aedf1f305/e84ab1e2-ab00-4a4e-8780-19ec7f598b6b/nempo-bumper-logo.png",
-  "original_filename": "nempo-bumper-logo.png",
-  "size": 821916,
   "content_type": "image/png",
-  "created_at": "2026-11-03T20:23:41Z"
+  "created_at": "2026-11-03T20:23:41Z",
+  "original_filename": "nempo-bumper-logo.png",
+  "project_id": "abde540b-b119-4bad-b565-40f7d0399a84",
+  "r2_key": "a/v1/abde540b-b119-4bad-b565-40f7d0399a84/e84ab1e2-ab00-4a4e-8780-19ec7f598b6b/nempo-bumper-logo.png",
+  "size": 821916,
+  "url": "/__l5e/assets-v1/e84ab1e2-ab00-4a4e-8780-19ec7f598b6b/nempo-bumper-logo.png",
+  "version": 1
 }

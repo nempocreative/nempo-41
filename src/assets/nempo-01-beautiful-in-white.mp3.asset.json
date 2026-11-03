@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "ca5f3b69-5bac-45e1-8685-260322b99990",
-  "project_id": "6a2f51fb-5243-4630-9e24-bb4aedf1f305",
-  "url": "/__l5e/assets-v1/ca5f3b69-5bac-45e1-8685-260322b99990/nempo-01-beautiful-in-white.mp3",
-  "r2_key": "a/v1/6a2f51fb-5243-4630-9e24-bb4aedf1f305/ca5f3b69-5bac-45e1-8685-260322b99990/nempo-01-beautiful-in-white.mp3",
-  "original_filename": "nempo-01-beautiful-in-white.mp3",
-  "size": 4425147,
   "content_type": "audio/mpeg",
-  "created_at": "2026-11-03T21:31:20Z"
+  "created_at": "2026-11-03T21:31:20Z",
+  "original_filename": "nempo-01-beautiful-in-white.mp3",
+  "project_id": "abde540b-b119-4bad-b565-40f7d0399a84",
+  "r2_key": "a/v1/abde540b-b119-4bad-b565-40f7d0399a84/ca5f3b69-5bac-45e1-8685-260322b99990/nempo-01-beautiful-in-white.mp3",
+  "size": 4425147,
+  "url": "/__l5e/assets-v1/ca5f3b69-5bac-45e1-8685-260322b99990/nempo-01-beautiful-in-white.mp3",
+  "version": 1
 }
