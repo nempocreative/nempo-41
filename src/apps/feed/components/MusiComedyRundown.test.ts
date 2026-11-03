@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { musicomedyRundown, rundownDuration, rundownSocial } from './MusiComedyRundown';
+import { rundownGreeting, rundownGreetingRules } from './MusiComedySapaan';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
@@ -61,5 +62,24 @@ describe('MusiComedy Night rundown times', () => {
     expect(at('Solo Vokal (Sesi 2)')).toBeGreaterThan(minutes('17.47'));
     expect(at('Solo Vokal (Sesi 2)')).toBeLessThan(minutes('18.56'));
     expect(at('Opening Bumper')).toBeGreaterThan(minutes('18.56'));
+  });
+});
+
+describe('MusiComedy Night greeting reference (page 2)', () => {
+  const allText = [...rundownGreeting.flatMap((c) => [...c.lines, c.note]), ...rundownGreetingRules].join(' ');
+
+  it('routes every booking question to the event WhatsApp number used on page 1', () => {
+    expect(allText).toContain('0857-2498-1356');
+    expect(rundownGreetingRules.join(' ')).toContain('0857-2498-1356');
+  });
+
+  it('quotes the same prayer-break times the rundown is anchored to', () => {
+    expect(allText).toContain('Maghrib 17.47');
+    expect(allText).toContain('Isya 18.56');
+  });
+
+  it('keeps the greeting free of channels the site does not have', () => {
+    expect(allText).not.toContain('kalamuda.com');
+    expect(allText).toContain('@kalamudacom');
   });
 });
