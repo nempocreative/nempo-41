@@ -41,10 +41,9 @@ export const rundownSocial: {
 }[] = [
   { brand: 'nempo', label: 'Instagram', value: '@nempo.id', href: 'https://instagram.com/nempo.id', icon: 'instagram' },
   { brand: 'nempo', label: 'TikTok', value: '@nempo.id', href: 'https://tiktok.com/@nempo.id', icon: 'tiktok' },
-  { brand: 'nempo', label: 'Website', value: 'nempo.id', href: 'https://nempo.id', icon: 'web' },
+  { brand: 'nempo', label: 'Website', value: 'www.nempogarut.com', href: 'https://www.nempogarut.com', icon: 'web' },
   { brand: 'nempo', label: 'WhatsApp', value: '0857-2498-1356', href: 'https://wa.me/6285724981356', icon: 'whatsapp' },
   { brand: 'kalamuda', label: 'Instagram', value: '@kalamudacom', href: 'https://www.instagram.com/kalamudacom/', icon: 'instagram' },
-  { brand: 'kalamuda', label: 'Website', value: 'kalamuda.com', href: 'https://www.kalamuda.com/', icon: 'web' },
 ];
 
 export const rundownBrands: { brand: SocialBrand; name: string }[] = [
