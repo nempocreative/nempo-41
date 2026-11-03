@@ -17,7 +17,7 @@
 - [x] Cetak rundown: rules @media print menyembunyikan chrome aplikasi dan mengunci kertas ke satu halaman A5 mendatar (210×148 mm) — tabel, baris logo medsos dan baris footer bawah ikut tercetak; diverifikasi lewat PDF A5 (1 halaman, semua terbaca).
 - [x] Dekor rundown dicabut: siluet penari/wayang maupun deretan ikon sama-sama ditolak, kertas A5 dibiarkan polos; diverifikasi lewat screenshot dan PDF A5 (1 halaman, semua terbaca).
 - [x] Halaman 2 rundown: acuan sapaan penerima tamu — tiga kartu (tamu datang yang sekaligus mengarahkan ke kasir untuk pesan menu & nomor meja, kalau sudah reservasi, tamu pulang) plus empat aturan singkat; kalimat sapaan sudah dikoreksi pemilik, tamu dipanggil "Kak". Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
-- [x] Halaman 3 rundown: acuan dokumentasi foto & video — lima kartu (sebelum acara, saat pertunjukan, wajib kepotret, video pendek reels & story, serah terima & unggah) plus empat aturan; kalimatnya masih draf yang menunggu koreksi pemilik. Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
+- [x] Halaman 3 rundown: acuan dokumentasi — dua kolom berjarak dan bergaris pemisah, FOTO (sebelum acara, saat pertunjukan, wajib kepotret) di kiri dan VIDEO (sebelum acara, saat pertunjukan, video pendek reels & story) di kanan; kartu serah terima & unggah melebar di bawah, plus empat aturan; kalimatnya masih draf yang menunggu koreksi pemilik. Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
 
 ## Terbuka
 - [x] Data event saat ini disinkronkan setelah remix: MusiComedy Night aktif, API dan halaman detail terbaca; lima dataset lama tetap kosong.
