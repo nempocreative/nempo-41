@@ -45,6 +45,8 @@ export const rundownGreeting: GreetingCard[] = [
   },
 ];
 
+export const rundownGreetingAnchor = 'Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56';
+
 export const rundownGreetingRules: string[] = [
   'Selalu sebut nama acara: MusiComedy Night.',
   'Jangan menjanjikan kursi, makanan, atau jam yang belum pasti.',
@@ -70,7 +72,7 @@ export function MusiComedySapaan() {
           <b>Rabu, 4 November 2026</b>
           <span>Good Story Cafe, Jl. Sudirman Copong No. 11</span>
           <span>Gerbang 15.00 · acara 19.20 · selesai 23.00 WIB</span>
-          <span className="mc-a5-anchor">Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56</span>
+          <span className="mc-a5-anchor">{rundownGreetingAnchor}</span>
         </div>
       </header>
 
