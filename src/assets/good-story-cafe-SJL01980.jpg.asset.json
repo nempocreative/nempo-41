@@ -1,11 +1,11 @@
 {
-  "asset_id": "dac194d6-29db-4ff1-80c1-c8ec99e449b5",
-  "content_type": "image/jpeg",
-  "created_at": "2026-11-03T18:52:51Z",
+  "version": 1,
+  "asset_id": "1d9893c9-51a2-49ff-8688-412284926daf",
+  "project_id": "6a2f51fb-5243-4630-9e24-bb4aedf1f305",
+  "url": "/__l5e/assets-v1/1d9893c9-51a2-49ff-8688-412284926daf/good-story-cafe-SJL01980.jpg",
+  "r2_key": "a/v1/6a2f51fb-5243-4630-9e24-bb4aedf1f305/1d9893c9-51a2-49ff-8688-412284926daf/good-story-cafe-SJL01980.jpg",
   "original_filename": "good-story-cafe-SJL01980.jpg",
-  "project_id": "68147161-243b-4123-bcc3-de6ddf965b0f",
-  "r2_key": "a/v1/68147161-243b-4123-bcc3-de6ddf965b0f/dac194d6-29db-4ff1-80c1-c8ec99e449b5/good-story-cafe-SJL01980.jpg",
   "size": 221594,
-  "url": "/__l5e/assets-v1/dac194d6-29db-4ff1-80c1-c8ec99e449b5/good-story-cafe-SJL01980.jpg",
-  "version": 1
+  "content_type": "image/jpeg",
+  "created_at": "2026-11-03T21:30:51Z"
 }

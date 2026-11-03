@@ -1,11 +1,11 @@
 {
-  "asset_id": "d12a47e8-9fb0-4243-9f4a-6d82cead1eb7",
-  "content_type": "image/jpeg",
-  "created_at": "2026-11-03T18:52:36Z",
+  "version": 1,
+  "asset_id": "b7de1da3-67fa-4e09-aec4-5a5babf8ba76",
+  "project_id": "6a2f51fb-5243-4630-9e24-bb4aedf1f305",
+  "url": "/__l5e/assets-v1/b7de1da3-67fa-4e09-aec4-5a5babf8ba76/denah-good-story-cafe.jpg",
+  "r2_key": "a/v1/6a2f51fb-5243-4630-9e24-bb4aedf1f305/b7de1da3-67fa-4e09-aec4-5a5babf8ba76/denah-good-story-cafe.jpg",
   "original_filename": "denah-good-story-cafe.jpg",
-  "project_id": "68147161-243b-4123-bcc3-de6ddf965b0f",
-  "r2_key": "a/v1/68147161-243b-4123-bcc3-de6ddf965b0f/d12a47e8-9fb0-4243-9f4a-6d82cead1eb7/denah-good-story-cafe.jpg",
   "size": 270212,
-  "url": "/__l5e/assets-v1/d12a47e8-9fb0-4243-9f4a-6d82cead1eb7/denah-good-story-cafe.jpg",
-  "version": 1
+  "content_type": "image/jpeg",
+  "created_at": "2026-11-03T21:29:57Z"
 }

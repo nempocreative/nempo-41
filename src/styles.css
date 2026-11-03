@@ -61,7 +61,7 @@
 .mc-bumper-puppet-left { left: -2%; animation: mc-puppet-left 12s ease-in-out infinite; }
 .mc-bumper-puppet-right { right: -2%; animation: mc-puppet-right 12s ease-in-out infinite; }
 .mc-bumper-puppet-right img { transform: scaleX(-1); }
-.mc-bumper-title-reveal { position: absolute; left: 16%; right: 16%; top: 32%; height: 38%; z-index: 6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5cqw; text-align: center; animation: mc-title-reveal 12s cubic-bezier(.16,1,.3,1) infinite; }
+.mc-bumper-title-reveal { position: absolute; left: 16%; right: 16%; top: 34%; height: 42%; z-index: 6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4.6cqw; text-align: center; animation: mc-title-reveal 12s cubic-bezier(.16,1,.3,1) infinite; }
 .mc-bumper-title-reveal img { width: 100%; height: auto; }
 .mc-bumper-title-reveal span { font-size: 2.7cqw; color: var(--bumper-gold); font-weight: 900; }
 .mc-bumper-title-reveal strong { font-size: 2.6cqw; color: var(--bumper-paper); font-weight: 900; }

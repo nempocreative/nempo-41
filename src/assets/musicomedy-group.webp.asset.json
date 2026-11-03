@@ -1,11 +1,11 @@
 {
-  "asset_id": "1462303e-6109-4c50-a6a1-03fa458b8747",
-  "content_type": "image/webp",
-  "created_at": "2026-11-03T18:53:08Z",
+  "version": 1,
+  "asset_id": "b4cf6630-7012-4faa-a8ac-478873974d2b",
+  "project_id": "6a2f51fb-5243-4630-9e24-bb4aedf1f305",
+  "url": "/__l5e/assets-v1/b4cf6630-7012-4faa-a8ac-478873974d2b/musicomedy-group.webp",
+  "r2_key": "a/v1/6a2f51fb-5243-4630-9e24-bb4aedf1f305/b4cf6630-7012-4faa-a8ac-478873974d2b/musicomedy-group.webp",
   "original_filename": "musicomedy-group.webp",
-  "project_id": "68147161-243b-4123-bcc3-de6ddf965b0f",
-  "r2_key": "a/v1/68147161-243b-4123-bcc3-de6ddf965b0f/1462303e-6109-4c50-a6a1-03fa458b8747/musicomedy-group.webp",
   "size": 318532,
-  "url": "/__l5e/assets-v1/1462303e-6109-4c50-a6a1-03fa458b8747/musicomedy-group.webp",
-  "version": 1
+  "content_type": "image/webp",
+  "created_at": "2026-11-03T21:30:57Z"
 }
