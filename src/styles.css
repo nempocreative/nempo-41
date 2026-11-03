@@ -43,9 +43,9 @@
 .mc-bumper-curtain { position: absolute; top: 0; bottom: 0; width: 51%; z-index: 7; background: repeating-linear-gradient(90deg, var(--bumper-red), color-mix(in oklab, var(--bumper-red) 55%, var(--bumper-ink)) 12%, var(--bumper-red) 24%); border-bottom: 3cqw solid var(--bumper-gold); }
 .mc-bumper-curtain-left { left: 0; animation: mc-curtain-left 12s ease-in-out infinite; }
 .mc-bumper-curtain-right { right: 0; animation: mc-curtain-right 12s ease-in-out infinite; }
-.mc-bumper-nempo { position: absolute; left: 25%; top: 7%; width: 50%; z-index: 9; animation: mc-nempo-opening 12s ease-in-out infinite; }
+.mc-bumper-nempo { position: absolute; left: 39%; top: 18%; width: 22%; z-index: 6; animation: mc-nempo-opening 12s ease-in-out infinite; }
 .mc-bumper-nempo img { display: block; width: 100%; height: auto; }
-@keyframes mc-nempo-opening { 0% { opacity: 1; transform: scale(.9); } 8%,14% { opacity: 1; transform: scale(1); } 25%,92% { opacity: 0; transform: scale(1.06); } 100% { opacity: 1; transform: scale(.9); } }
+@keyframes mc-nempo-opening { 0%,33% { opacity: 0; transform: translateY(12px) scale(.85); } 43%,85% { opacity: 1; transform: translateY(0) scale(1); } 94%,100% { opacity: 0; transform: translateY(-8px) scale(1); } }
 .mc-bumper-puppet { position: absolute; top: 28%; width: 58%; height: 58%; z-index: 8; transform-origin: 50% 90%; }
 .mc-bumper-puppet img { width: 100%; height: 100%; object-fit: contain; }
 .mc-bumper-puppet-left { left: -2%; animation: mc-puppet-left 12s ease-in-out infinite; }
@@ -59,7 +59,7 @@
 @keyframes mc-curtain-right { 0%,10% { transform: translateX(0); } 32%,92% { transform: translateX(100%); } 100% { transform: translateX(0); } }
 @keyframes mc-puppet-left { 0% { transform: translateX(12%) rotate(-8deg); } 10% { transform: translateX(10%) rotate(5deg); } 33% { transform: translateX(-72%) rotate(-14deg); } 45%,80% { transform: translateX(-82%) rotate(-8deg); } 92% { transform: translateX(-72%) rotate(-14deg); } 100% { transform: translateX(12%) rotate(-8deg); } }
 @keyframes mc-puppet-right { 0% { transform: translateX(-12%) rotate(8deg); } 10% { transform: translateX(-10%) rotate(-5deg); } 33% { transform: translateX(72%) rotate(14deg); } 45%,80% { transform: translateX(82%) rotate(8deg); } 92% { transform: translateX(72%) rotate(14deg); } 100% { transform: translateX(-12%) rotate(8deg); } }
-@keyframes mc-title-reveal { 0%,18% { opacity: 0; transform: scale(.25) rotate(-8deg); filter: blur(12px); } 37% { opacity: 1; transform: scale(1.08) rotate(0); filter: blur(0); } 48%,85% { opacity: 1; transform: scale(1); filter: blur(0); } 94%,100% { opacity: 0; transform: scale(.8); filter: blur(0); } }
+@keyframes mc-title-reveal { 0%,38% { opacity: 0; transform: scale(.65) translateY(20px); filter: blur(8px); } 52% { opacity: 1; transform: scale(1.04) translateY(0); filter: blur(0); } 60%,85% { opacity: 1; transform: scale(1); filter: blur(0); } 94%,100% { opacity: 0; transform: scale(.9); filter: blur(0); } }
 @keyframes mc-bumper-back { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @keyframes mc-bumper-logo { 0% { opacity: 0; transform: scale(.75); } 7%,94% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.04); } }
 @keyframes mc-bumper-intro { 0%,5% { opacity: 0; transform: translateY(20px); } 12%,25% { opacity: 1; transform: translateY(0); } 32%,100% { opacity: 0; transform: translateY(-15px); } }
@@ -70,7 +70,7 @@
   .mc-bumper-stage *, .mc-bumper-stage { animation: none; }
   .mc-bumper-intro, .mc-bumper-performers { display: none; }
   .mc-bumper-curtain, .mc-bumper-puppet { display: none; }
-  .mc-bumper-nempo { top: 9%; }
+  .mc-bumper-nempo { top: 18%; }
 }
 
 /* The venue reservation tool keeps its palette local to the event page. */
