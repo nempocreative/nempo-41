@@ -110,11 +110,11 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Side callouts pointing at the phone. */}
-      <div className="s33-callout s33-callout--left absolute left-[7%] top-[50%]">
+      <div className="s33-callout s33-callout--left absolute left-[14%] top-[50%]">
         <b>GRATIS!</b>
         <span>Cukup order &amp; nongkrong ☕</span>
       </div>
-      <div className="s33-callout s33-callout--right absolute right-[7%] top-[64%]">
+      <div className="s33-callout s33-callout--right absolute right-[14%] top-[64%]">
         <b>Reservasi</b>
         <span>WA 0857-2498-1356</span>
       </div>
