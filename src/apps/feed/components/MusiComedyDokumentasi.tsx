@@ -18,7 +18,6 @@ export const rundownDocGroups: DocGroup[] = [
           'Foto venue, banner, dan meja kasir saat masih kosong.',
           'Foto kursi, dekor, dan papan nama acara.',
         ],
-        note: 'Cari titik cahaya paling terang di ruangan.',
       },
       {
         label: 'Saat pertunjukan · 19.20 – 23.00',
@@ -26,7 +25,6 @@ export const rundownDocGroups: DocGroup[] = [
           'Foto dari sisi panggung, jangan dari tengah penonton.',
           'Ambil reaksi penonton saat tepuk tangan.',
         ],
-        note: 'Tanpa flash saat pertunjukan berlangsung.',
       },
       {
         label: 'Detail & momen lucu',
@@ -43,7 +41,6 @@ export const rundownDocGroups: DocGroup[] = [
           'Tari Jaipong · Melodi dan Guest Star · Saduli Ragap.',
           'Pencungan serta suasana ruangan saat penuh.',
         ],
-        note: 'Kalau ada sesi yang terlewat, kabari PIC segera.',
       },
     ],
   },
@@ -60,7 +57,6 @@ export const rundownDocGroups: DocGroup[] = [
           'Rekam satu video utuh untuk tiap sesi, jangan dipotong-potong.',
           'Rekam suara suasana ±30 detik untuk latar video.',
         ],
-        note: 'Rekam lebih lama dari yang perlu — sisanya dipakai waktu edit.',
       },
       {
         label: 'Detail & momen lucu',
@@ -76,7 +72,6 @@ export const rundownDocGroups: DocGroup[] = [
           'Tiap sesi ambil 10–15 detik: wajah, tangan, suasana.',
           'Tutup dengan papan nama acara dan handle @nempo.id.',
         ],
-        note: 'Simpan file mentah, jangan dihapus sebelum serah terima.',
       },
     ],
   },
@@ -89,7 +84,6 @@ export const rundownDocShared: DocCard = {
     'Jangan unggah sebelum boleh dari PIC.',
     'Caption menyebut NEMPO GARUT × Kala Muda × Good Story Cafe, @nempo.id, @kalamudacom.',
   ],
-  note: 'Unggah setelah acara selesai.',
 };
 
 export const rundownDoc: DocCard[] = [...rundownDocGroups.flatMap((g) => g.cards), rundownDocShared];
@@ -97,7 +91,6 @@ export const rundownDoc: DocCard[] = [...rundownDocGroups.flatMap((g) => g.cards
 export const rundownDocRules: string[] = [
   'Tanpa flash saat pertunjukan berlangsung.',
   'Jangan menghalangi pandangan penonton.',
-  'Jangan unggah sebelum boleh dari PIC.',
   'Ragu? Hubungi PIC: WhatsApp 0857-2498-1356.',
 ];
 
@@ -111,7 +104,6 @@ export function MusiComedyDokumentasi() {
       <header className="mc-a5-head">
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">
-          <span className="mc-a5-kicker">Halaman 3</span>
           <b>ACUAN DOKUMENTASI</b>
           <span>Tim Foto &amp; Video · MusiComedy Night</span>
         </div>
@@ -119,7 +111,6 @@ export function MusiComedyDokumentasi() {
           <b>Rabu, 4 November 2026</b>
           <span>Good Story Cafe, Jl. Sudirman Copong No. 11</span>
           <span>Gerbang 15.00 · acara 19.20 · selesai 23.00 WIB</span>
-          <span className="mc-a5-anchor">Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56</span>
         </div>
       </header>
 
@@ -162,7 +153,6 @@ export function MusiComedyDokumentasi() {
 
       <footer className="mc-a5-foot">
         <span>NEMPO GARUT × Kala Muda × Good Story Cafe</span>
-        <span>Halaman 3 dari 3 · acuan dokumentasi foto &amp; video</span>
       </footer>
     </main>
   );
