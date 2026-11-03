@@ -27,13 +27,12 @@ describe('MusiComedy Night rundown times', () => {
     expect(rundownSocial.map((s) => s.href)).toEqual([
       'https://instagram.com/nempo.id',
       'https://tiktok.com/@nempo.id',
-      'https://nempo.id',
+      'https://www.nempogarut.com',
       'https://wa.me/6285724981356',
       'https://www.instagram.com/kalamudacom/',
-      'https://www.kalamuda.com/',
     ]);
     expect(rundownSocial.map((s) => s.brand)).toEqual([
-      'nempo', 'nempo', 'nempo', 'nempo', 'kalamuda', 'kalamuda',
+      'nempo', 'nempo', 'nempo', 'nempo', 'kalamuda',
     ]);
   });
 
