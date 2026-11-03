@@ -29,6 +29,14 @@ export const rundownDocGroups: DocGroup[] = [
         note: 'Tanpa flash saat pertunjukan berlangsung.',
       },
       {
+        label: 'Detail & momen lucu',
+        lines: [
+          'Ambil wajah dari jarak dekat: ekspresi, tangan, dan kaki.',
+          'Ambil pandangan jauh: panggung dan ruangan sekaligus.',
+          'Kejar momen lucu saat pemain dan penonton tertawa spontan.',
+        ],
+      },
+      {
         label: 'Wajib kepotret',
         lines: [
           'Solo Vokal · Berlin, Musik Etnik, dan Opening Tari Mojang.',
@@ -53,6 +61,14 @@ export const rundownDocGroups: DocGroup[] = [
           'Rekam suara suasana ±30 detik untuk latar video.',
         ],
         note: 'Rekam lebih lama dari yang perlu — sisanya dipakai waktu edit.',
+      },
+      {
+        label: 'Detail & momen lucu',
+        lines: [
+          'Rekam wajah dari jarak dekat: ekspresi dan tangan pemain.',
+          'Rekam pandangan jauh: panggung dan ruangan sekaligus.',
+          'Rekam momen lucu saat pemain dan penonton tertawa spontan.',
+        ],
       },
       {
         label: 'Video pendek · reels & story',
