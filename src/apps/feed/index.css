@@ -1636,3 +1636,25 @@
 }
 
 .s33-reminder-line { white-space: nowrap; font-size: 2.6cqw; }
+
+/* MusiComedy rundown tab — reuses the slide 33 cream/red palette. */
+.mc-rundown {
+  width: 70cqw; margin: 0; padding: 1.6cqw; list-style: none;
+  display: grid; grid-template-columns: 1fr 1fr; grid-auto-flow: column; grid-template-rows: repeat(5, auto); gap: 1cqw 1.4cqw;
+  border-radius: 2.6cqw; border: 2px solid rgba(206, 54, 59, 0.75);
+  background: linear-gradient(160deg, rgba(255, 248, 233, 0.96), rgba(255, 239, 207, 0.96));
+  box-shadow: 0 1.4cqw 3cqw rgba(6, 20, 34, 0.45);
+}
+.mc-rundown-item { display: flex; align-items: center; gap: 1.2cqw; min-height: 5.4cqw; padding: 0.6cqw 1cqw; border-radius: 1.6cqw; background: rgba(255, 255, 255, 0.55); }
+.mc-rundown-item.is-star { background: linear-gradient(100deg, #a8262b, #d9473f); color: #fff8e9; }
+.mc-rundown-num {
+  flex: none; display: grid; place-items: center; width: 4cqw; height: 4cqw; border-radius: 999px;
+  background: linear-gradient(160deg, #e0474c, #ce363b 60%, #a8262b); color: #fff8e9; font-size: 1.6cqw; font-weight: 900;
+}
+.is-star .mc-rundown-num { background: #fff8e9; color: #a8262b; }
+.mc-rundown-text { display: flex; flex-direction: column; line-height: 1.1; color: #a8262b; min-width: 0; }
+.is-star .mc-rundown-text { color: #fff8e9; }
+.mc-rundown-text small { font-size: 1.35cqw; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #9a5a2c; }
+.is-star .mc-rundown-text small { color: #ffe1b0; }
+.mc-rundown-text b { font-size: 2.1cqw; font-weight: 900; }
+.mc-rundown-text em { font-size: 1.45cqw; font-style: normal; font-weight: 600; opacity: 0.85; }
