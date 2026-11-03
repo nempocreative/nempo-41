@@ -1,11 +1,11 @@
 {
-  "asset_id": "675b801f-cf30-484f-afeb-930231dd22e8",
-  "content_type": "image/jpeg",
-  "created_at": "2026-11-03T13:37:40Z",
+  "version": 1,
+  "asset_id": "b0101731-6339-48c5-b5d9-de5ab894511b",
+  "project_id": "b86cc284-f93b-44e3-a327-505a482f76b1",
+  "url": "/__l5e/assets-v1/b0101731-6339-48c5-b5d9-de5ab894511b/qris-nempo-garut-saweran.jpeg",
+  "r2_key": "a/v1/b86cc284-f93b-44e3-a327-505a482f76b1/b0101731-6339-48c5-b5d9-de5ab894511b/qris-nempo-garut-saweran.jpeg",
   "original_filename": "qris-nempo-garut-saweran.jpeg",
-  "project_id": "826a4e54-5c36-44fd-bb57-12b207372c2f",
-  "r2_key": "a/v1/826a4e54-5c36-44fd-bb57-12b207372c2f/675b801f-cf30-484f-afeb-930231dd22e8/qris-nempo-garut-saweran.jpeg",
   "size": 89565,
-  "url": "/__l5e/assets-v1/675b801f-cf30-484f-afeb-930231dd22e8/qris-nempo-garut-saweran.jpeg",
-  "version": 1
+  "content_type": "image/jpeg",
+  "created_at": "2026-11-03T18:53:17Z"
 }
