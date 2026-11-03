@@ -17,6 +17,12 @@ describe('MusiComedy Night rundown times', () => {
     expect(musicomedyRundown.every((row) => /^\d{2}\.\d{2}( – \d{2}\.\d{2})?$/.test(row.time))).toBe(true);
   });
 
+  it('shows a length in minutes for every row, adzan gaps included', () => {
+    expect(musicomedyRundown.map((_, i) => rundownDuration(i))).toEqual([
+      115, 40, 23, 40, 24, 10, 25, 15, 25, 20, 45, 30, 50,
+    ]);
+  });
+
   it('uses the adzan times the owner gave as the prayer-break anchors', () => {
     const breaks = musicomedyRundown.filter((row) => row.kind === 'pray').map((row) => row.time);
     expect(breaks).toEqual(['17.47', '18.56']);
