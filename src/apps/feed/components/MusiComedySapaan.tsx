@@ -4,7 +4,7 @@ import logoAsset from '@/assets/musicomedy-night-logo.png.asset.json';
 // The wording is a draft for the owner to adjust; every fact inside it (times, venue,
 // WhatsApp, handles) is the same one used on page 1 and on the site.
 
-export type GreetingCard = { label: string; lines: string[]; note: string };
+export type GreetingCard = { label: string; lines: string[]; note: string; accent?: boolean };
 
 export const rundownGreeting: GreetingCard[] = [
   {
@@ -14,7 +14,17 @@ export const rundownGreeting: GreetingCard[] = [
       'Nama dan jumlah tamunya berapa, Kak?',
       'Sudah reservasi atau belum, ya?',
     ],
-    note: 'Senyum, sapa, lalu antarkan ke meja kursi.',
+    note: 'Senyum, sapa, lalu arahkan ke kasir.',
+  },
+  {
+    label: 'Setelah disapa · arahkan ke kasir',
+    lines: [
+      'Silakan ke kasir dulu ya, untuk pesan menu.',
+      'Dari kasir nanti Bapak/Ibu dapat nomor meja.',
+      'Kalau sudah pesan, kami antarkan ke meja sesuai nomor.',
+    ],
+    note: 'Nomor meja keluar dari kasir — jangan menjanjikan lebih dulu.',
+    accent: true,
   },
   {
     label: 'Sudah reservasi',
@@ -92,7 +102,7 @@ export function MusiComedySapaan() {
 
       <div className="mc-sapaan-grid">
         {rundownGreeting.map((card) => (
-          <section key={card.label} className="mc-sapaan-card">
+          <section key={card.label} className={'mc-sapaan-card' + (card.accent ? ' is-key' : '')}>
             <h2>{card.label}</h2>
             <ul>
               {card.lines.map((line) => (
