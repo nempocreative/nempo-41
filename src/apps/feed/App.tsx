@@ -65,6 +65,8 @@ import { SlideThirtySumpahPemuda } from './components/SlideThirtySumpahPemuda';
 import { SlideThirtyOneBackground } from './components/SlideThirtyOneBackground';
 import { SlideThirtyThreeReminder } from './components/SlideThirtyThreeReminder';
 import { MusiComedyRundown } from './components/MusiComedyRundown';
+import { MusiComedyBumper } from './components/MusiComedyBumper';
+import { Button } from '@/components/ui/button';
 import { renderNempoSlide20Png } from './lib/renderNempoSlide20Png';
 import {
   GgsBeautySlideOne,
@@ -2645,6 +2647,7 @@ function App() {
     | 'calendar'
     | 'spreadsheet'
     | 'rundown'
+    | 'bumper'
   >('nempo');
   const [activeSlide, setActiveSlide] = useState<FeedSlide>(32);
   const [activeClientSlide, setActiveClientSlide] = useState<ClientSlide>(3);
@@ -2662,6 +2665,7 @@ function App() {
   const isCoupon = activeFeed === 'coupon';
   const isQCard = activeFeed === 'qcard';
   const isRundown = activeFeed === 'rundown';
+  const isBumper = activeFeed === 'bumper';
   const isPhotobooth = activeFeed === 'photobooth';
   const isMemberCard = activeFeed === 'member-card';
   const isCalendar = activeFeed === 'calendar';
@@ -3017,6 +3021,7 @@ function App() {
           >
             Rundown MusiComedy
           </button>
+          <Button role="tab" aria-selected={isBumper} onClick={() => setActiveFeed('bumper')} className="mc-bumper-tab" variant="ghost" size="sm">Bumper Acara</Button>
           <button
             type="button"
             role="tab"
@@ -3125,7 +3130,7 @@ function App() {
             Q Card MC
           </button>
         </div>
-        {!isCoupon && !isQCard && !isSpreadsheet && !isRundown && (
+        {!isCoupon && !isQCard && !isSpreadsheet && !isRundown && !isBumper && (
           <div className="mb-3 flex flex-col items-center gap-2">
             {isNempoFeed && preparedNempoPng?.slide === activeSlide ? (
               <>
@@ -3222,6 +3227,8 @@ function App() {
           <GgsCouponDesigner />
         ) : isRundown ? (
           <MusiComedyRundown exportRef={exportRef} />
+        ) : isBumper ? (
+          <MusiComedyBumper />
         ) : isQCard ? (
           <GgsQCardCover />
         ) : isMemberCard ? (
@@ -3239,7 +3246,7 @@ function App() {
         ) : (
           <FeedArtwork slide={activeSlide} exportRef={exportRef} />
         )}
-        {!isSpreadsheet && !isRundown && !isCoupon && !isQCard && !isPhotobooth && !isMemberCard && !isCalendar && <div
+        {!isSpreadsheet && !isRundown && !isBumper && !isCoupon && !isQCard && !isPhotobooth && !isMemberCard && !isCalendar && <div
           className="mt-4 flex max-w-[94vw] items-center gap-1 overflow-x-auto rounded-full bg-[#062f4d] p-1 shadow-[0_8px_20px_rgba(0,40,78,0.2)] max-[640px]:mb-4 max-[640px]:gap-0.5 max-[640px]:p-0.5"
           aria-label={
             isGgsStory

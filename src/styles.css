@@ -5,6 +5,52 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* MusiComedy opening film: palette scoped to the feed's bumper. */
+.mc-bumper-tool, .mc-bumper-tab {
+  --bumper-paper: oklch(0.97 0.03 85);
+  --bumper-red: oklch(0.48 0.16 25);
+  --bumper-gold: oklch(0.84 0.14 85);
+  --bumper-ink: oklch(0.24 0.03 25);
+  --bumper-shadow: 0 12px 35px color-mix(in oklab, var(--bumper-ink) 30%, transparent);
+  --color-primary: var(--bumper-red);
+  --color-primary-foreground: var(--bumper-paper);
+  --color-primary-border: var(--bumper-red);
+  --button-outline: var(--bumper-red);
+}
+.mc-bumper-tab { color: var(--bumper-paper); flex-shrink: 0; }
+.mc-bumper-tab[aria-selected="true"] { background: var(--bumper-red); }
+.mc-bumper-tool { display: flex; flex-direction: column; align-items: center; gap: 14px; width: 100%; }
+.mc-bumper-controls { display: flex; gap: 8px; color: var(--bumper-red); }
+.mc-bumper-stage { position: relative; container-type: inline-size; width: min(90vw, 450px); aspect-ratio: 3 / 4; overflow: hidden; background: var(--bumper-ink); box-shadow: var(--bumper-shadow); isolation: isolate; font-family: 'DM Sans', sans-serif; color: var(--bumper-paper); }
+.mc-bumper-stage * { letter-spacing: 0; }
+.mc-bumper-backdrop, .mc-bumper-frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
+.mc-bumper-backdrop { animation: mc-bumper-back 12s linear infinite; }
+.mc-bumper-frame { z-index: 5; pointer-events: none; }
+.mc-bumper-brand { position: absolute; left: 24%; top: 15%; width: 52%; z-index: 6; animation: mc-bumper-logo 12s ease-in-out infinite; }
+.mc-bumper-brand img { width: 100%; display: block; }
+.mc-bumper-intro, .mc-bumper-welcome { position: absolute; inset: 37% 12% 16%; display: flex; flex-direction: column; align-items: center; text-align: center; z-index: 3; }
+.mc-bumper-intro > span, .mc-bumper-welcome > span, .mc-bumper-performers > span { color: var(--bumper-gold); font-weight: 900; font-size: 2.6cqw; }
+.mc-bumper-intro strong, .mc-bumper-welcome strong { margin-top: 2.5cqw; font-size: 11cqw; line-height: 1.03; font-weight: 900; text-shadow: 0 3px 0 var(--bumper-red); }
+.mc-bumper-stage em { font-style: normal; color: var(--bumper-gold); }
+.mc-bumper-intro { animation: mc-bumper-intro 12s ease-in-out infinite; }
+.mc-bumper-performers { position: absolute; inset: 37% 14% 14%; z-index: 3; display: flex; flex-direction: column; align-items: center; animation: mc-bumper-talent 12s ease-in-out infinite; }
+.mc-bumper-performers img { width: 100%; height: 93%; object-fit: contain; object-position: bottom; }
+.mc-bumper-welcome { animation: mc-bumper-end 12s ease-in-out infinite; }
+.mc-bumper-welcome strong { font-size: 9.3cqw; }
+.mc-bumper-welcome p { font-size: 3cqw; font-weight: 900; color: var(--bumper-gold); margin-top: 4cqw; }
+.mc-bumper-progress { position: absolute; bottom: 0; left: 0; height: 0.8%; background: var(--bumper-gold); width: 100%; transform-origin: left; animation: mc-bumper-progress 12s linear infinite; z-index: 8; }
+.mc-bumper-stage.is-paused *, .mc-bumper-stage.is-paused { animation-play-state: paused; }
+@keyframes mc-bumper-back { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+@keyframes mc-bumper-logo { 0% { opacity: 0; transform: scale(.75); } 7%,94% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.04); } }
+@keyframes mc-bumper-intro { 0%,5% { opacity: 0; transform: translateY(20px); } 12%,25% { opacity: 1; transform: translateY(0); } 32%,100% { opacity: 0; transform: translateY(-15px); } }
+@keyframes mc-bumper-talent { 0%,30% { opacity: 0; transform: translateY(20px) scale(.95); } 37%,63% { opacity: 1; transform: translateY(0) scale(1); } 70%,100% { opacity: 0; transform: translateY(-15px) scale(1.02); } }
+@keyframes mc-bumper-end { 0%,68% { opacity: 0; transform: translateY(20px); } 75%,94% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-15px); } }
+@keyframes mc-bumper-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .mc-bumper-stage *, .mc-bumper-stage { animation: none; }
+  .mc-bumper-intro, .mc-bumper-performers { display: none; }
+}
+
 /* The venue reservation tool keeps its palette local to the event page. */
 .cafe-reservation, .event-location, .event-saweran {
   --color-background: oklch(0.985 0.003 160);
