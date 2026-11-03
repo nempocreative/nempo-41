@@ -1702,20 +1702,30 @@
 .mc-a5-kicker { font-size: 1.1cqw !important; font-weight: 900 !important; color: #b98c4f !important; letter-spacing: 0.24em !important; margin-top: 0 !important; }
 
 /* Page 2 — greeting cards for the reception team. */
-.mc-sapaan-grid, .mc-doc-grid { margin-top: 1.1cqw; display: grid; grid-template-columns: 1fr 1fr; gap: 0.8cqw; }
+.mc-sapaan-grid { margin-top: 1.1cqw; display: grid; grid-template-columns: 1fr 1fr; gap: 0.8cqw; }
 .mc-sapaan-card, .mc-doc-card { min-width: 0; border: 0.14cqw solid #e3c69a; background: #fbefdc; padding: 0.7cqw 0.9cqw; }
-.mc-sapaan-card h2, .mc-doc-card h2 { margin: 0 0 0.35cqw; font-size: 1.3cqw; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; color: #a8262b; }
+.mc-sapaan-card h2, .mc-doc-card h3 { margin: 0 0 0.35cqw; font-size: 1.3cqw; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; color: #a8262b; }
 .mc-sapaan-card ul, .mc-doc-card ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.2cqw; }
 .mc-sapaan-card li, .mc-doc-card li { position: relative; padding-left: 1.1cqw; font-size: 1.2cqw; font-weight: 600; line-height: 1.25; color: #3a1d14; }
 .mc-sapaan-card li::before, .mc-doc-card li::before { content: '–'; position: absolute; left: 0; color: #b98c4f; font-weight: 900; }
 .mc-sapaan-note, .mc-doc-note { margin: 0.4cqw 0 0; font-size: 1.05cqw; font-style: italic; font-weight: 700; color: #9a5a2c; }
 .mc-sapaan-card.is-key { border: 0.2cqw solid #a8262b; background: #f6d9c2; }
 .mc-sapaan-card.is-key .mc-sapaan-note { color: #a8262b; }
-.mc-sapaan-card:last-child, .mc-doc-card:last-child { grid-column: 1 / -1; }
+.mc-sapaan-card:last-child { grid-column: 1 / -1; }
 .mc-sapaan-rules, .mc-doc-rules { margin-top: auto; padding-top: 0.7cqw; border-top: 0.12cqw solid #e3c69a; display: flex; flex-wrap: wrap; gap: 0.25cqw 1.6cqw; }
 .mc-sapaan-rules span, .mc-doc-rules span { position: relative; padding-left: 1cqw; font-size: 1.1cqw; font-weight: 800; color: #5e3517; white-space: nowrap; }
 .mc-sapaan-rules span::before, .mc-doc-rules span::before { content: '✓'; position: absolute; left: 0; color: #a8262b; font-weight: 900; }
-.mc-sapaan-grid, .mc-sapaan-rules, .mc-doc-grid, .mc-doc-rules { position: relative; z-index: 1; }
+.mc-sapaan-grid, .mc-sapaan-rules, .mc-doc-cols, .mc-doc-shared, .mc-doc-rules { position: relative; z-index: 1; }
+
+/* Page 3 — photo notes and video notes read side by side, clearly apart. */
+.mc-doc-cols { margin-top: 1.1cqw; display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.8cqw; }
+.mc-doc-col { min-width: 0; }
+.mc-doc-col + .mc-doc-col { border-left: 0.14cqw solid #e3c69a; padding-left: 1.8cqw; }
+.mc-doc-medium { margin: 0 0 0.5cqw; display: flex; align-items: center; gap: 0.7cqw; font-size: 1.5cqw; font-weight: 900; letter-spacing: 0.18em; text-transform: uppercase; color: #a8262b; }
+.mc-doc-medium::after { content: ''; flex: 1; height: 0.14cqw; background: #b98c4f; }
+.mc-doc-stack { display: flex; flex-direction: column; gap: 0.8cqw; }
+.mc-doc-shared { margin-top: 0.9cqw; }
+
 
 /* Print: the three A5 sheets, one per page — app chrome stays off the paper. */
 @media print {
