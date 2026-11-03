@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { musicomedyRundown, rundownDuration, rundownSocial } from './MusiComedyRundown';
 import { rundownGreeting, rundownGreetingAnchor, rundownGreetingRules } from './MusiComedySapaan';
+import { rundownDoc, rundownDocRules } from './MusiComedyDokumentasi';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
@@ -98,5 +99,25 @@ describe('MusiComedy Night greeting wording', () => {
     const text = rundownGreeting.flatMap((c) => [...c.lines, c.note]).join(' ');
     expect(text).not.toContain('Bapak');
     expect(text).toContain('Kak');
+  });
+});
+
+describe('MusiComedy Night documentation reference (page 3)', () => {
+  const docText = [...rundownDoc.flatMap((c) => [...c.lines, c.note]), ...rundownDocRules].join(' ');
+
+  it('names every act the rundown lists so nothing is missed on camera', () => {
+    for (const act of ['Berlin', 'Melodi', 'Saduli Ragap', 'Pencungan', 'Mojang']) {
+      expect(docText).toContain(act);
+    }
+  });
+
+  it('routes the hand-off to the same event WhatsApp number', () => {
+    expect(docText).toContain('0857-2498-1356');
+    expect(rundownDocRules.join(' ')).toContain('0857-2498-1356');
+  });
+
+  it('keeps the reference free of channels the site does not have', () => {
+    expect(docText).not.toContain('kalamuda.com');
+    expect(docText).toContain('@kalamudacom');
   });
 });
