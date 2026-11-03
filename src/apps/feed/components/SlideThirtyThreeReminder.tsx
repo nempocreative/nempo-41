@@ -84,7 +84,7 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Phone mockup showing the event page on nempogarut.com. */}
-      <div className="s33-phone absolute left-1/2 top-[37%] -translate-x-1/2">
+      <div className="s33-phone absolute left-1/2 top-[36%] -translate-x-1/2">
         <div className="s33-phone-notch" />
         <div className="s33-phone-screen">
           <div className="s33-web-url">🔒 nempogarut.com/event/musicomedy-night</div>
@@ -110,11 +110,11 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Side callouts pointing at the phone. */}
-      <div className="s33-callout s33-callout--left absolute left-[5%] top-[50%]">
+      <div className="s33-callout s33-callout--left absolute left-[14%] top-[47%]">
         <b>GRATIS!</b>
         <span>Cukup order &amp; nongkrong ☕</span>
       </div>
-      <div className="s33-callout s33-callout--right absolute right-[4%] top-[64%]">
+      <div className="s33-callout s33-callout--right absolute right-[14%] top-[62%]">
         <b>Reservasi</b>
         <span>WA 0857-2498-1356</span>
       </div>
