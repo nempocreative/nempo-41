@@ -120,4 +120,14 @@ describe('MusiComedy Night documentation reference (page 3)', () => {
     expect(docText).not.toContain('kalamuda.com');
     expect(docText).toContain('@kalamudacom');
   });
+
+  it('keeps photo notes and video notes in their own columns', () => {
+    const [photo, video] = rundownDocGroups;
+    expect(photo.medium).toBe('Foto');
+    expect(video.medium).toBe('Video');
+    const photoText = photo.cards.flatMap((c) => [...c.lines, c.note ?? '']).join(' ');
+    const videoText = video.cards.flatMap((c) => [...c.lines, c.note ?? '']).join(' ');
+    expect(photoText).not.toMatch(/rekam|video/i);
+    expect(videoText).not.toMatch(/foto/i);
+  });
 });
