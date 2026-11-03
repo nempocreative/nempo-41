@@ -1685,7 +1685,7 @@
 .mc-a5-table td:nth-child(4) { width: 8cqw; text-align: center; white-space: nowrap; font-weight: 700; color: #7a4a2c; }
 .mc-a5-table tbody tr.is-star td { background: #f6d9c2; color: #a8262b; }
 .mc-a5-table tbody tr.is-pray td { background: #ecd6ae; color: #5e3517; font-style: italic; font-weight: 700; border-bottom: 1px dashed #b98c4f; border-top: 1px dashed #b98c4f; }
-.mc-a5-social { margin-top: auto; padding-top: 0.9cqw; border-top: 0.12cqw solid #e3c69a; display: flex; align-items: center; justify-content: center; gap: 1.6cqw; }
+.mc-a5-social { margin-top: 0.8cqw; padding-top: 0.9cqw; border-top: 0.12cqw solid #e3c69a; display: flex; align-items: center; justify-content: center; gap: 1.6cqw; }
 .mc-a5-social-group { display: flex; align-items: center; gap: 1.1cqw; }
 .mc-a5-social-brand { font-size: 1.05cqw; font-weight: 900; letter-spacing: 0.18em; color: #a8262b; white-space: nowrap; }
 .mc-a5-social-pills { display: flex; flex-wrap: nowrap; gap: 1.1cqw; }
@@ -1695,6 +1695,13 @@
 .mc-a5-social-group:last-child .mc-a5-social-brand,
 .mc-a5-social-group:last-child .mc-a5-pill svg { color: #a62f78; }
 .mc-a5-foot { margin-top: 1cqw; display: flex; justify-content: space-between; gap: 2cqw; text-align: right; font-size: 1.15cqw; font-weight: 700; letter-spacing: 0.1em; color: #9a5a2c; }
+/* Cultural decoration: wayang & penari band in the gap above the social line, plus a faint gunungan watermark. */
+.mc-a5-deco { margin-top: auto; display: flex; align-items: flex-end; justify-content: center; gap: 2.4cqw; padding: 0.2cqw 0 0.1cqw; color: #a8262b; }
+.mc-a5-deco-figure { height: 5cqw; width: auto; display: block; opacity: 0.8; }
+.mc-a5-deco-mid { height: 5.8cqw; width: auto; display: block; opacity: 0.8; color: #b98c4f; }
+.mc-a5-deco-flip { transform: scaleX(-1); }
+.mc-a5-watermark { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 30cqw; height: auto; color: #a8262b; opacity: 0.05; pointer-events: none; }
+.mc-a5-head, .mc-a5-table, .mc-a5-deco, .mc-a5-social, .mc-a5-foot { position: relative; z-index: 1; }
 /* Print: only the A5 sheet, exactly one page — app chrome stays off the paper. */
 @media print {
   @page { size: A5 landscape; margin: 0; }
