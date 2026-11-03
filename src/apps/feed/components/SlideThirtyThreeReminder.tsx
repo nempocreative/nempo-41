@@ -84,7 +84,7 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Phone mockup showing the event page on nempogarut.com. */}
-      <div className="s33-phone absolute top-[27%]" style={{ left: "calc(50% - 12.5cqw)" }}>
+      <div className="s33-phone absolute top-[31%]" style={{ left: "calc(50% - 12.5cqw)" }}>
         <div className="s33-phone-notch" />
         <div className="s33-phone-screen">
           <div className="s33-web-url">🔒 nempogarut.com/event/musicomedy-night</div>
