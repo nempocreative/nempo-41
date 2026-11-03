@@ -1658,3 +1658,24 @@
 .is-star .mc-rundown-text small { color: #ffe1b0; }
 .mc-rundown-text b { font-size: 2.1cqw; font-weight: 900; }
 .mc-rundown-text em { font-size: 1.45cqw; font-style: normal; font-weight: 600; opacity: 0.85; }
+
+/* MusiComedy rundown — A5 landscape paper. */
+.mc-a5 {
+  container-type: inline-size; display: flex; flex-direction: column; padding: 3.2cqw 4cqw 2.4cqw;
+  background: #fffaf0; color: #3a1d14; border: 0.5cqw solid #a8262b; outline: 0.25cqw solid #e9c58c; outline-offset: -1.4cqw;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+.mc-a5-head { display: flex; align-items: center; gap: 2.4cqw; padding-bottom: 1.4cqw; border-bottom: 0.3cqw solid #a8262b; }
+.mc-a5-logo { width: 17cqw; filter: drop-shadow(0 0.4cqw 0.6cqw rgba(0,0,0,0.25)); }
+.mc-a5-title b { display: block; font-size: 3.6cqw; font-weight: 900; color: #a8262b; letter-spacing: 0.06em; line-height: 1; }
+.mc-a5-title span { display: block; margin-top: 0.6cqw; font-size: 1.45cqw; font-weight: 600; color: #7a4a2c; }
+.mc-a5-table { width: 100%; margin-top: 1.4cqw; border-collapse: collapse; font-size: 1.55cqw; }
+.mc-a5-table th { background: #a8262b; color: #fff8e9; text-align: left; padding: 0.7cqw 1cqw; font-weight: 800; letter-spacing: 0.04em; }
+.mc-a5-table td { padding: 0.62cqw 1cqw; border-bottom: 1px solid #ecd7b8; }
+.mc-a5-table tbody tr:nth-child(even) td { background: #fbefdc; }
+.mc-a5-table td:first-child, .mc-a5-table th:first-child { width: 6cqw; text-align: center; font-weight: 800; }
+.mc-a5-table td:nth-child(2) { width: 15cqw; font-weight: 700; color: #9a5a2c; }
+.mc-a5-table td:nth-child(3) { font-weight: 800; }
+.mc-a5-table tr.is-star td { background: #f6d9c2; color: #a8262b; }
+.mc-a5-foot { margin-top: auto; text-align: right; font-size: 1.2cqw; font-weight: 700; letter-spacing: 0.12em; color: #9a5a2c; }
+@media print { @page { size: A5 landscape; margin: 0; } }
