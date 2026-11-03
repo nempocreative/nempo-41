@@ -36,32 +36,6 @@ export const rundownGreeting: GreetingCard[] = [
     note: 'Sebut nama tamu saat mengantar, jangan ditinggal.',
   },
   {
-    label: 'Belum reservasi',
-    lines: [
-      'Boleh, kami catat dulu nama dan jumlah tamunya.',
-      'Kursi sedang penuh — kami masukkan daftar tunggu, ya.',
-      'Atau bisa simpan kursi lewat WhatsApp 0857-2498-1356.',
-    ],
-    note: 'Jangan menjanjikan kursi yang belum tentu ada.',
-  },
-  {
-    label: 'Sering ditanya',
-    lines: [
-      'Masuknya gratis, tanpa tiket.',
-      'Mulai 19.20 WIB, selesai 23.00 WIB.',
-      'Jeda salat: Maghrib 17.47, Isya 18.56 — ±25 menit.',
-    ],
-    note: 'Kalau ragu soal jam, cek rundown halaman 1.',
-  },
-  {
-    label: 'Tamu datang terlambat',
-    lines: [
-      'Silakan, acaranya masih berjalan.',
-      'Kami carikan kursi di pinggir supaya tidak mengganggu.',
-    ],
-    note: 'Jangan menyapa keras saat pertunjukan sedang jalan.',
-  },
-  {
     label: 'Tamu pulang',
     lines: [
       'Terima kasih sudah hadir, mohon maaf kalau ada yang kurang.',
@@ -70,6 +44,8 @@ export const rundownGreeting: GreetingCard[] = [
     note: 'Antar sampai pintu, jangan hanya dari jauh.',
   },
 ];
+
+export const rundownGreetingAnchor = 'Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56';
 
 export const rundownGreetingRules: string[] = [
   'Selalu sebut nama acara: MusiComedy Night.',
@@ -96,7 +72,7 @@ export function MusiComedySapaan() {
           <b>Rabu, 4 November 2026</b>
           <span>Good Story Cafe, Jl. Sudirman Copong No. 11</span>
           <span>Gerbang 15.00 · acara 19.20 · selesai 23.00 WIB</span>
-          <span className="mc-a5-anchor">Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56</span>
+          <span className="mc-a5-anchor">{rundownGreetingAnchor}</span>
         </div>
       </header>
 

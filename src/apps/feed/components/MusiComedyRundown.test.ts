@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { musicomedyRundown, rundownDuration, rundownSocial } from './MusiComedyRundown';
-import { rundownGreeting, rundownGreetingRules } from './MusiComedySapaan';
+import { rundownGreeting, rundownGreetingAnchor, rundownGreetingRules } from './MusiComedySapaan';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
@@ -74,8 +74,8 @@ describe('MusiComedy Night greeting reference (page 2)', () => {
   });
 
   it('quotes the same prayer-break times the rundown is anchored to', () => {
-    expect(allText).toContain('Maghrib 17.47');
-    expect(allText).toContain('Isya 18.56');
+    expect(rundownGreetingAnchor).toContain('Maghrib 17.47');
+    expect(rundownGreetingAnchor).toContain('Isya 18.56');
   });
 
   it('keeps the greeting free of channels the site does not have', () => {
