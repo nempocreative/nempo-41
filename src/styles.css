@@ -43,6 +43,9 @@
 .mc-bumper-curtain { position: absolute; top: 0; bottom: 0; width: 51%; z-index: 7; background: repeating-linear-gradient(90deg, var(--bumper-red), color-mix(in oklab, var(--bumper-red) 55%, var(--bumper-ink)) 12%, var(--bumper-red) 24%); border-bottom: 3cqw solid var(--bumper-gold); }
 .mc-bumper-curtain-left { left: 0; animation: mc-curtain-left 12s ease-in-out infinite; }
 .mc-bumper-curtain-right { right: 0; animation: mc-curtain-right 12s ease-in-out infinite; }
+.mc-bumper-nempo { position: absolute; left: 25%; top: 7%; width: 50%; z-index: 9; animation: mc-nempo-opening 12s ease-in-out infinite; }
+.mc-bumper-nempo img { display: block; width: 100%; height: auto; }
+@keyframes mc-nempo-opening { 0% { opacity: 1; transform: scale(.9); } 8%,14% { opacity: 1; transform: scale(1); } 25%,92% { opacity: 0; transform: scale(1.06); } 100% { opacity: 1; transform: scale(.9); } }
 .mc-bumper-puppet { position: absolute; top: 28%; width: 58%; height: 58%; z-index: 8; transform-origin: 50% 90%; }
 .mc-bumper-puppet img { width: 100%; height: 100%; object-fit: contain; }
 .mc-bumper-puppet-left { left: -2%; animation: mc-puppet-left 12s ease-in-out infinite; }
@@ -67,6 +70,7 @@
   .mc-bumper-stage *, .mc-bumper-stage { animation: none; }
   .mc-bumper-intro, .mc-bumper-performers { display: none; }
   .mc-bumper-curtain, .mc-bumper-puppet { display: none; }
+  .mc-bumper-nempo { top: 9%; }
 }
 
 /* The venue reservation tool keeps its palette local to the event page. */
