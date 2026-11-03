@@ -76,7 +76,7 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Short reminder headline under the MusiComedy Night title. */}
-      <div className="musicomedy-s33-ribbon absolute left-[18%] right-[18%] top-[30%]">
+      <div className="musicomedy-s33-ribbon absolute left-[18%] right-[18%] top-[64%]">
         <p className="musicomedy-s33-ribbon-text" style={{ whiteSpace: "nowrap", fontSize: "2.6cqw" }}>
           <span className="musicomedy-s33-stamp-inner">BESOK!</span>
           Cek detail eventnya di web 👇
@@ -84,7 +84,7 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Phone mockup showing the event page on nempogarut.com. */}
-      <div className="s33-phone absolute top-[38%]" style={{ left: "calc(50% - 12.5cqw)" }}>
+      <div className="s33-phone absolute top-[27%]" style={{ left: "calc(50% - 12.5cqw)" }}>
         <div className="s33-phone-notch" />
         <div className="s33-phone-screen">
           <div className="s33-web-url">🔒 nempogarut.com/event/musicomedy-night</div>
@@ -110,11 +110,11 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Side callouts pointing at the phone. */}
-      <div className="s33-callout s33-callout--left absolute left-[14%] top-[50%]">
+      <div className="s33-callout s33-callout--left absolute left-[14%] top-[39%]">
         <b>GRATIS!</b>
         <span>Cukup order &amp; nongkrong ☕</span>
       </div>
-      <div className="s33-callout s33-callout--right absolute right-[14%] top-[64%]">
+      <div className="s33-callout s33-callout--right absolute right-[14%] top-[53%]">
         <b>Reservasi</b>
         <span>WA 0857-2498-1356</span>
       </div>
