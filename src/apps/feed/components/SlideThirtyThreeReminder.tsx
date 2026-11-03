@@ -1,3 +1,5 @@
+import posterImage from '@/assets/musicomedy-night-poster.webp';
+
 // Slide 33 — animated "datang besok" reminder layered over the shared MusiComedy frame.
 // Scoped to slide 33 only: slides 31 and 32 keep their own looks (see AGENTS.md).
 
@@ -73,29 +75,48 @@ export function SlideThirtyThreeReminder() {
         ))}
       </div>
 
-      {/* Reminder card: centred below the MusiComedy Night title. */}
-      <div className="musicomedy-s33-ribbon absolute left-[19%] right-[19%] top-[29%]">
+      {/* Short reminder headline under the MusiComedy Night title. */}
+      <div className="musicomedy-s33-ribbon absolute left-[24%] right-[24%] top-[27.5%]">
         <p className="musicomedy-s33-ribbon-text">
-          <span className="musicomedy-s33-stamp-inner">BESOK!</span><br />
-          Jangan lupa datang besok,<br />kita seru-seruan bareng!
+          <span className="musicomedy-s33-stamp-inner">BESOK!</span>
+          Cek detail eventnya di web 👇
         </p>
       </div>
 
-      {/* Free-entry explanation, filling the middle of the poster. */}
-      <div className="musicomedy-s33-ribbon absolute left-[24%] right-[24%] top-[45%]">
-        <p className="musicomedy-s33-ribbon-text">
-          <span className="musicomedy-s33-free">GRATIS!</span><br />
-          Cukup order, datang &amp; nongkrong<br />seperti biasa ☕
-        </p>
+      {/* Phone mockup showing the event page on nempogarut.com. */}
+      <div className="s33-phone absolute left-1/2 top-[37%] -translate-x-1/2">
+        <div className="s33-phone-notch" />
+        <div className="s33-phone-screen">
+          <div className="s33-web-url">🔒 nempogarut.com/event/musicomedy-night</div>
+          <div className="s33-web-header">
+            <span className="s33-web-logo">N</span>
+            <span>
+              <b>NEMPO GARUT</b>
+              <small>ORGANIZER</small>
+            </span>
+          </div>
+          <img className="s33-web-poster" src={posterImage} alt="" />
+          <div className="s33-web-body">
+            <div className="s33-web-tags">
+              <span>RABU, 4 NOV 2026</span>
+              <span className="s33-web-free">GRATIS</span>
+            </div>
+            <div className="s33-web-title">MusiComedy Night</div>
+            <div className="s33-web-row">📍 Good Story Cafe, Garut</div>
+            <div className="s33-web-row">🎤 bersama Saduli Ragap</div>
+            <div className="s33-web-btn">Reservasi &amp; pilih kursi</div>
+          </div>
+        </div>
       </div>
 
-      {/* Reservation + seat picking info (same contact as nempogarut.com). */}
-      <div className="musicomedy-s33-ribbon absolute left-[14%] right-[14%] top-[62%]">
-        <p className="musicomedy-s33-ribbon-text musicomedy-s33-ribbon-text--small">
-          Mau amankan kursi? Reservasi &amp; pilih kursi lewat<br />
-          <span className="musicomedy-s33-wa">WhatsApp 0857-2498-1356</span><br />
-          atau buka www.nempogarut.com
-        </p>
+      {/* Side callouts pointing at the phone. */}
+      <div className="s33-callout s33-callout--left absolute left-[5%] top-[50%]">
+        <b>GRATIS!</b>
+        <span>Cukup order &amp; nongkrong ☕</span>
+      </div>
+      <div className="s33-callout s33-callout--right absolute right-[4%] top-[64%]">
+        <b>Reservasi</b>
+        <span>WA 0857-2498-1356</span>
       </div>
     </section>
   );
