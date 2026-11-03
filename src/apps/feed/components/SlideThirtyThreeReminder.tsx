@@ -114,7 +114,7 @@ export function SlideThirtyThreeReminder() {
         <b>GRATIS!</b>
         <span>Cukup order &amp; nongkrong ☕</span>
       </div>
-      <div className="s33-callout s33-callout--right absolute right-[5%] top-[66%]">
+      <div className="s33-callout s33-callout--right absolute right-[4%] top-[64%]">
         <b>Reservasi</b>
         <span>WA 0857-2498-1356</span>
       </div>
