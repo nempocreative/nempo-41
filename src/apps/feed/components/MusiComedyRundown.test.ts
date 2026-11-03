@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { musicomedyRundown, rundownDuration } from './MusiComedyRundown';
+import { musicomedyRundown, rundownDuration, rundownSocial } from './MusiComedyRundown';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
@@ -20,6 +20,15 @@ describe('MusiComedy Night rundown times', () => {
   it('shows a length in minutes for every row, adzan gaps included', () => {
     expect(musicomedyRundown.map((_, i) => rundownDuration(i))).toEqual([
       115, 40, 23, 40, 24, 10, 25, 15, 25, 20, 45, 30, 50,
+    ]);
+  });
+
+  it('points readers to NEMPO\'s own channels, website and event WhatsApp', () => {
+    expect(rundownSocial.map((s) => s.href)).toEqual([
+      'https://instagram.com/nempo.id',
+      'https://tiktok.com/@nempo.id',
+      'https://nempo.id',
+      'https://wa.me/6285724981356',
     ]);
   });
 
