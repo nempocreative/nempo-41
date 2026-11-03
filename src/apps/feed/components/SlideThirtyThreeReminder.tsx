@@ -76,10 +76,10 @@ export function SlideThirtyThreeReminder() {
       </div>
 
       {/* Short reminder headline under the MusiComedy Night title. */}
-      <div className="musicomedy-s33-ribbon absolute left-[18%] right-[18%] top-[64%]">
+      <div className="musicomedy-s33-ribbon absolute left-[18%] right-[18%] top-[67%]">
         <p className="musicomedy-s33-ribbon-text" style={{ whiteSpace: "nowrap", fontSize: "2.6cqw" }}>
           <span className="musicomedy-s33-stamp-inner">BESOK!</span>
-          Cek detail eventnya di web 👇
+          Cek detail eventnya di web
         </p>
       </div>
 
