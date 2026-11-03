@@ -10,9 +10,9 @@ export const rundownGreeting: GreetingCard[] = [
   {
     label: 'Tamu datang · gerbang 15.00',
     lines: [
-      'Sampurasun, selamat datang di MusiComedy Night, Good Story Cafe.',
-      'Nama dan jumlah tamunya berapa, Kak?',
-      'Sudah reservasi atau belum, ya?',
+      'Halo Kak, sebelumnya sudah reservasi? Untuk berapa orang, ya?',
+      'Baik, untuk mengambil nomor meja nanti Kakak bisa langsung order dulu di kasir ya, Kak.',
+      'Terima kasih, selamat menikmati acara hari ini ya.',
     ],
     note: 'Senyum, sapa, lalu arahkan ke kasir.',
   },
@@ -27,11 +27,11 @@ export const rundownGreeting: GreetingCard[] = [
     accent: true,
   },
   {
-    label: 'Sudah reservasi',
+    label: 'Kalau sudah reservasi',
     lines: [
       'Baik, kami cek dulu ya.',
-      'Sudah tercatat atas nama … — silakan, ini kursi Kak.',
-      'Acara mulai 19.20 WIB. Selamat menikmati.',
+      'Sudah tercatat atas nama … — boleh masuk Kak, dan nanti akan diarahkan tim kami di dalam ya.',
+      'Terima kasih, selamat menikmati acara hari ini ya.',
     ],
     note: 'Sebut nama tamu saat mengantar, jangan ditinggal.',
   },
