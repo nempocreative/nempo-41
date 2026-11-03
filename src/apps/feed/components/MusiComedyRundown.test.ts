@@ -23,12 +23,17 @@ describe('MusiComedy Night rundown times', () => {
     ]);
   });
 
-  it('points readers to NEMPO\'s own channels, website and event WhatsApp', () => {
+  it('points readers to NEMPO and Kala Muda channels, website and event WhatsApp', () => {
     expect(rundownSocial.map((s) => s.href)).toEqual([
       'https://instagram.com/nempo.id',
       'https://tiktok.com/@nempo.id',
       'https://nempo.id',
       'https://wa.me/6285724981356',
+      'https://www.instagram.com/kalamudacom/',
+      'https://www.kalamuda.com/',
+    ]);
+    expect(rundownSocial.map((s) => s.brand)).toEqual([
+      'nempo', 'nempo', 'nempo', 'nempo', 'kalamuda', 'kalamuda',
     ]);
   });
 
