@@ -1695,4 +1695,15 @@
 .mc-a5-social-group:last-child .mc-a5-social-brand { color: #a62f78; }
 .mc-a5-social-group:last-child .mc-a5-pill { border-color: #c9a2d6; background: #f7eef8; color: #a62f78; }
 .mc-a5-foot { margin-top: auto; display: flex; justify-content: space-between; gap: 2cqw; text-align: right; font-size: 1.15cqw; font-weight: 700; letter-spacing: 0.1em; color: #9a5a2c; }
-@media print { @page { size: A5 landscape; margin: 0; } }
+/* Print: only the A5 sheet, exactly one page — app chrome stays off the paper. */
+@media print {
+  @page { size: A5 landscape; margin: 0; }
+  html, body { height: 100%; overflow: hidden; background: #fff; }
+  body * { visibility: hidden; }
+  .mc-a5, .mc-a5 * { visibility: visible; }
+  .mc-a5 {
+    position: fixed; left: 0; top: 0;
+    width: 210mm; height: 148mm; margin: 0; box-shadow: none;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+}
