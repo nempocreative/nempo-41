@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { musicomedyRundown, rundownDuration, rundownSocial } from './MusiComedyRundown';
 import { rundownGreeting, rundownGreetingAnchor, rundownGreetingRules } from './MusiComedySapaan';
-import { rundownDoc, rundownDocRules } from './MusiComedyDokumentasi';
+import { rundownDoc, rundownDocGroups, rundownDocRules } from './MusiComedyDokumentasi';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
@@ -103,7 +103,7 @@ describe('MusiComedy Night greeting wording', () => {
 });
 
 describe('MusiComedy Night documentation reference (page 3)', () => {
-  const docText = [...rundownDoc.flatMap((c) => [...c.lines, c.note]), ...rundownDocRules].join(' ');
+  const docText = [...rundownDoc.flatMap((c) => [...c.lines, c.note ?? '']), ...rundownDocRules].join(' ');
 
   it('names every act the rundown lists so nothing is missed on camera', () => {
     for (const act of ['Berlin', 'Melodi', 'Saduli Ragap', 'Pencungan', 'Mojang']) {
