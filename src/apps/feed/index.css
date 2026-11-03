@@ -1584,8 +1584,8 @@
   animation: s33-phone-float 5s ease-in-out infinite;
 }
 @keyframes s33-phone-float {
-  0%, 100% { transform: translate(-50%, 0) rotate(-1.5deg); }
-  50% { transform: translate(-50%, -1.2cqw) rotate(1deg); }
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50% { transform: translateY(-1.2cqw) rotate(1deg); }
 }
 .s33-phone-notch {
   position: absolute; z-index: 2; left: 50%; top: 1.8cqw; width: 9cqw; height: 2.2cqw;
