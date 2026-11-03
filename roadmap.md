@@ -12,10 +12,10 @@
 
 - [x] Akun admin admin@nempogarut.com dibuat; 109 data situs (wisata, kuliner, penginapan, lomba, kamus Sunda) dimasukkan ke database.
 - [x] Data impor lama tidak dipertahankan: setelah remix, wisata, kuliner, penginapan, perlombaan, dan kamus Sunda diverifikasi kosong; jangan impor ulang.
-- [x] Migration Drizzle hasil copy dibersihkan dan set migration kosong disiapkan; 21 tabel database proyek baru jadi baseline, drizzle-kit check lolos.
-- [x] Rundown MusiComedy (kertas A5 mendatar) diberi jam detail + kolom menit berpatokan adzan Ashar 14.49, Maghrib 17.47, Isya 18.56; footer medsos berupa logo/ikon (IG, TikTok, web, WA) dalam dua kelompok — NEMPO (@nempo.id, nempo.id, WA) dan KALA MUDA (@kalamudacom, kalamuda.com); jam, menit, baris jeda salat dan tautan sosial diuji.
+- [x] Migration Drizzle hasil copy dibersihkan dan set migration kosong disiapkan; 21 tabel database proyek baru jadi baseline, drizzle-kit check lolos. Semua 42 referensi foto/audio/video sudah dipindah ke penyimpanan proyek ini (video slide 32 dipulihkan lewat host yang masih menyajikan filenya) — 0 foto rusak di beranda/feed/komunitas, 249 tes lolos.
+- [x] Rundown MusiComedy (kertas A5 mendatar) diberi jam detail + kolom menit berpatokan adzan Ashar 14.49, Maghrib 17.47, Isya 18.56; baris medsos berisi ikon + alamat, dua kelompok — NEMPO (@nempo.id IG & TikTok, www.nempogarut.com, WA 0857-2498-1356) dan KALA MUDA (@kalamudacom); jam, menit, baris jeda salat dan tautan sosial diuji.
 - [x] Cetak rundown: rules @media print menyembunyikan chrome aplikasi dan mengunci kertas ke satu halaman A5 mendatar (210×148 mm) — tabel, baris logo medsos dan baris footer bawah ikut tercetak; diverifikasi lewat PDF A5 (1 halaman, semua terbaca).
-- [x] Dekor budaya rundown: pita siluet penari + wayang punokawan + gunungan di celah antara tabel dan baris medsos, plus bayangan gunungan samar di latar; digambar inline sebagai SVG (tajam di cetak), diverifikasi lewat screenshot dan PDF A5.
+- [x] Dekor budaya rundown: siluet penari Jaipong asli di kanan dan siluet wayang punokawan Semar di kiri, samar di latar kertas (bukan deretan ikon); diverifikasi lewat screenshot dan PDF A5 (1 halaman, tidak menutupi tulisan).
 
 ## Terbuka
 - [x] Data event saat ini disinkronkan setelah remix: MusiComedy Night aktif, API dan halaman detail terbaca; lima dataset lama tetap kosong.
