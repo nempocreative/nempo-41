@@ -1,7 +1,7 @@
 import logoAsset from '@/assets/musicomedy-night-logo.png.asset.json';
 
 // Rundown page 2 — greeting reference for the reception team (penerima tamu).
-// Wording is a draft for the owner to adjust; every fact inside it (times, venue,
+// The wording is a draft for the owner to adjust; every fact inside it (times, venue,
 // WhatsApp, handles) is the same one used on page 1 and on the site.
 
 export type GreetingCard = { label: string; lines: string[]; note: string };
@@ -10,52 +10,52 @@ export const rundownGreeting: GreetingCard[] = [
   {
     label: 'Tamu datang · gerbang 15.00',
     lines: [
-      '“Sampurasun, selamat datang di MusiComedy Night, Good Story Cafe.”',
-      '“Nama dan jumlah tamunya berapa, Kak?”',
-      '“Sudah reservasi atau belum, ya?”',
+      'Sampurasun, selamat datang di MusiComedy Night, Good Story Cafe.',
+      'Nama dan jumlah tamunya berapa, Kak?',
+      'Sudah reservasi atau belum, ya?',
     ],
     note: 'Senyum, sapa, lalu antarkan ke meja kursi.',
   },
   {
     label: 'Sudah reservasi',
     lines: [
-      '“Baik, kami cek dulu ya.”',
-      '“Sudah tercatat atas nama … — silakan, ini kursi Bapak/Ibu.”',
-      '“Acara mulai 19.20 WIB. Selamat menikmati.”',
+      'Baik, kami cek dulu ya.',
+      'Sudah tercatat atas nama … — silakan, ini kursi Bapak/Ibu.',
+      'Acara mulai 19.20 WIB. Selamat menikmati.',
     ],
     note: 'Sebut nama tamu saat mengantar, jangan ditinggal.',
   },
   {
     label: 'Belum reservasi',
     lines: [
-      '“Boleh, kami catat dulu nama dan jumlah tamunya.”',
-      '“Kursi sedang penuh — kami masukkan daftar tunggu, ya.”',
-      '“Atau bisa simpan kursi lewat WhatsApp 0857-2498-1356.”',
+      'Boleh, kami catat dulu nama dan jumlah tamunya.',
+      'Kursi sedang penuh — kami masukkan daftar tunggu, ya.',
+      'Atau bisa simpan kursi lewat WhatsApp 0857-2498-1356.',
     ],
     note: 'Jangan menjanjikan kursi yang belum tentu ada.',
   },
   {
     label: 'Sering ditanya',
     lines: [
-      '“Masuknya gratis, tanpa tiket.”',
-      '“Mulai 19.20 WIB, selesai 23.00 WIB.”',
-      '“Jeda salat: Maghrib 17.47, Isya 18.56 — ±25 menit.”',
+      'Masuknya gratis, tanpa tiket.',
+      'Mulai 19.20 WIB, selesai 23.00 WIB.',
+      'Jeda salat: Maghrib 17.47, Isya 18.56 — ±25 menit.',
     ],
     note: 'Kalau ragu soal jam, cek rundown halaman 1.',
   },
   {
     label: 'Tamu datang terlambat',
     lines: [
-      '“Silakan, acaranya masih berjalan.”',
-      '“Kami carikan kursi di pinggir supaya tidak mengganggu.”',
+      'Silakan, acaranya masih berjalan.',
+      'Kami carikan kursi di pinggir supaya tidak mengganggu.',
     ],
     note: 'Jangan menyapa keras saat pertunjukan sedang jalan.',
   },
   {
     label: 'Tamu pulang',
     lines: [
-      '“Terima kasih sudah hadir, mohon maaf kalau ada yang kurang.”',
-      '“Jangan lupa follow @nempo.id dan @kalamudacom, ya.”',
+      'Terima kasih sudah hadir, mohon maaf kalau ada yang kurang.',
+      'Jangan lupa follow @nempo.id dan @kalamudacom, ya.',
     ],
     note: 'Antar sampai pintu, jangan hanya dari jauh.',
   },
@@ -79,14 +79,12 @@ export function MusiComedySapaan() {
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">
           <span className="mc-a5-kicker">Halaman 2</span>
-          <h1>ACUAN SAPAAN</h1>
-          <p>Penerima Tamu · MusiComedy Night</p>
+          <b>ACUAN SAPAAN</b>
+          <span>Penerima Tamu · MusiComedy Night</span>
         </div>
         <div className="mc-a5-info">
-          <span>
-            <strong>Rabu, 4 November 2026</strong>
-          </span>
-          <span>Good Story Cafe · Jl. Sudirman Copong No. 11</span>
+          <b>Rabu, 4 November 2026</b>
+          <span>Good Story Cafe, Jl. Sudirman Copong No. 11</span>
           <span>Gerbang 15.00 · acara 19.20 · selesai 23.00 WIB</span>
           <span className="mc-a5-anchor">Patokan adzan: Ashar 14.49 · Maghrib 17.47 · Isya 18.56</span>
         </div>
@@ -112,10 +110,10 @@ export function MusiComedySapaan() {
         ))}
       </div>
 
-      <div className="mc-a5-foot">
+      <footer className="mc-a5-foot">
         <span>NEMPO GARUT × Kala Muda × Good Story Cafe</span>
         <span>Halaman 2 dari 2 · acuan sapaan penerima tamu</span>
-      </div>
+      </footer>
     </main>
   );
 }

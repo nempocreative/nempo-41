@@ -1,6 +1,7 @@
 import { Fragment, type RefObject } from 'react';
 import { Globe, Instagram } from 'lucide-react';
 import logoAsset from '@/assets/musicomedy-night-logo.png.asset.json';
+import { MusiComedySapaan } from './MusiComedySapaan';
 
 // MusiComedy Night rundown — A5 landscape paper sheet (210×148 mm) in the slide 31–33 palette.
 // Times are anchored to the adzan schedule the owner gave for 4 Nov 2026:
@@ -90,12 +91,14 @@ export function rundownDuration(index: number): number {
 export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElement | null> }) {
   let no = 0;
   return (
-    <main
-      ref={exportRef}
-      className="mc-a5 relative w-[min(96vw,1100px)] overflow-hidden"
-      style={{ aspectRatio: '210 / 148', fontFamily: "'DM Sans', 'Inter', sans-serif" }}
-      aria-label="Rundown MusiComedy Night"
-    >
+    <div className="mc-pages">
+      <span className="mc-page-tag">Halaman 1 · Rundown acara</span>
+      <main
+        ref={exportRef}
+        className="mc-a5 relative w-[min(96vw,1100px)] overflow-hidden"
+        style={{ aspectRatio: '210 / 148', fontFamily: "'DM Sans', 'Inter', sans-serif" }}
+        aria-label="Rundown MusiComedy Night"
+      >
       <header className="mc-a5-head">
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">
@@ -164,6 +167,9 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
         <span>NEMPO GARUT × Kala Muda × Good Story Cafe</span>
         <span>Jam dapat maju/mundur ±10 menit</span>
       </footer>
-    </main>
+      </main>
+      <span className="mc-page-tag">Halaman 2 · Acuan sapaan penerima tamu</span>
+      <MusiComedySapaan />
+    </div>
   );
 }
