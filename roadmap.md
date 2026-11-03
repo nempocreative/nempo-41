@@ -12,9 +12,9 @@
 
 - [x] Akun admin admin@nempogarut.com dibuat; 109 data situs (wisata, kuliner, penginapan, lomba, kamus Sunda) dimasukkan ke database.
 - [x] Data impor lama tidak dipertahankan: setelah remix, wisata, kuliner, penginapan, perlombaan, dan kamus Sunda diverifikasi kosong; jangan impor ulang.
+- [x] Migration Drizzle hasil copy dibersihkan dan set migration kosong disiapkan; 21 tabel database proyek baru jadi baseline, drizzle-kit check lolos.
 
 ## Terbuka
-- [ ] Bersihkan migration Drizzle yang ikut ter-copy setelah remix dan siapkan set migration kosong untuk database proyek baru.
 - [x] Data event saat ini disinkronkan setelah remix: MusiComedy Night aktif, API dan halaman detail terbaca; lima dataset lama tetap kosong.
 - [ ] Unduh ekspor database lengkap terbaru: menunggu pengguna menjalankan Export data di More → Database → Manage → Settings.
 - [ ] Pindahkan data ke Supabase milik pengguna: file salinan `nempo-database-salinan.sql` sudah siap di Files (teruji jalan di database tiruan) — jalankan di SQL Editor tujuan; akun admin dibuat ulang di tujuan lalu baris `user_roles` ditambahkan.
