@@ -28,8 +28,8 @@ export const rundownGreeting: GreetingCard[] = [
   {
     label: 'Tamu pulang',
     lines: [
-      'Terima kasih sudah hadir, mohon maaf kalau ada yang kurang.',
-      'Jangan lupa follow @nempo.id dan @kalamudacom, ya.',
+      'Terima kasih sudah hadir ya, Kak.',
+      'Jangan lupa follow @nempo.id dan @kalamudacom untuk info event selanjutnya.',
     ],
     note: 'Antar sampai pintu, jangan hanya dari jauh.',
   },
