@@ -25,22 +25,17 @@
 .mc-bumper-stage * { letter-spacing: 0; }
 .mc-bumper-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
 .mc-bumper-backdrop { animation: mc-bumper-back 12s linear infinite; }
-.mc-bumper-instrument { position: absolute; z-index: 4; pointer-events: none; animation: mc-instrument-enter 12s ease-in-out infinite; }
-.mc-bumper-instrument img { display: block; width: 100%; height: 100%; object-fit: contain; transform-origin: center 85%; }
-.mc-bumper-angklung { left: 5%; top: 12%; width: 22%; height: 23%; }
-.mc-bumper-angklung img { animation: mc-angklung-shake 1s ease-in-out infinite; }
-.mc-bumper-gong { right: 5%; top: 12%; width: 22%; height: 23%; }
-.mc-bumper-gong img { animation: mc-gong-swing 1.5s ease-in-out infinite; transform-origin: center 12%; }
-.mc-bumper-kendang { left: 35%; top: 72%; width: 30%; height: 14%; }
-.mc-bumper-kendang img { animation: mc-kendang-hop 1.2s ease-in-out infinite; }
+.mc-bumper-penari { position: absolute; z-index: 2; pointer-events: none; animation: mc-penari-sway 3.2s ease-in-out infinite; }
+.mc-bumper-penari img { width: 100%; height: 100%; object-fit: contain; opacity: .3; filter: drop-shadow(0 0 1cqw rgba(0,0,0,.35)); }
+.mc-bumper-penari-left { left: 3%; bottom: 10%; width: 24%; height: 52%; }
+.mc-bumper-penari-right { right: 3%; bottom: 10%; width: 24%; height: 52%; transform: scaleX(-1); animation-delay: -1.6s; }
+@keyframes mc-penari-sway { 0%,100% { transform: rotate(-3deg) translateY(0); } 50% { transform: rotate(3deg) translateY(-4px); } }
+
 .mc-bumper-event { position: absolute; left: 12%; right: 12%; bottom: 4%; display: flex; flex-direction: column; align-items: center; gap: 1cqw; text-align: center; z-index: 6; animation: mc-instrument-enter 12s ease-in-out infinite; }
 .mc-bumper-event strong { color: var(--bumper-gold); font-size: 3.4cqw; }
 .mc-bumper-event span { font-size: 3cqw; font-weight: 800; }
 .mc-bumper-event small { font-size: 2.4cqw; }
 @keyframes mc-instrument-enter { 0%,33% { opacity: 0; transform: translateY(30px) scale(.6); } 43%,87% { opacity: 1; transform: translateY(0) scale(1); } 94%,100% { opacity: 0; transform: translateY(15px) scale(.8); } }
-@keyframes mc-angklung-shake { 0%,100% { transform: rotate(-7deg); } 25% { transform: rotate(5deg) translateY(-4px); } 50% { transform: rotate(-3deg); } 75% { transform: rotate(7deg) translateY(-4px); } }
-@keyframes mc-gong-swing { 0%,100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
-@keyframes mc-kendang-hop { 0%,100% { transform: translateY(0) rotate(-5deg) scale(1.04,.96); } 50% { transform: translateY(-12px) rotate(5deg) scale(.98,1.02); } }
 .mc-bumper-brand { position: absolute; left: 24%; top: 15%; width: 52%; z-index: 6; animation: mc-bumper-logo 12s ease-in-out infinite; }
 .mc-bumper-brand img { width: 100%; display: block; }
 .mc-bumper-intro, .mc-bumper-welcome { position: absolute; inset: 37% 12% 16%; display: flex; flex-direction: column; align-items: center; text-align: center; z-index: 3; }
@@ -58,7 +53,7 @@
 .mc-bumper-curtain { position: absolute; top: 0; bottom: 0; width: 51%; z-index: 7; background: repeating-linear-gradient(90deg, var(--bumper-red), color-mix(in oklab, var(--bumper-red) 55%, var(--bumper-ink)) 12%, var(--bumper-red) 24%); border-bottom: 3cqw solid var(--bumper-gold); }
 .mc-bumper-curtain-left { left: 0; animation: mc-curtain-left 12s ease-in-out infinite; }
 .mc-bumper-curtain-right { right: 0; animation: mc-curtain-right 12s ease-in-out infinite; }
-.mc-bumper-nempo { position: absolute; left: 39%; top: 18%; width: 22%; z-index: 6; animation: mc-nempo-opening 12s ease-in-out infinite; }
+.mc-bumper-nempo { position: absolute; left: 30%; top: 15%; width: 40%; z-index: 6; animation: mc-nempo-opening 12s ease-in-out infinite; }
 .mc-bumper-nempo img { display: block; width: 100%; height: auto; }
 @keyframes mc-nempo-opening { 0%,33% { opacity: 0; transform: translateY(12px) scale(.85); } 43%,85% { opacity: 1; transform: translateY(0) scale(1); } 94%,100% { opacity: 0; transform: translateY(-8px) scale(1); } }
 .mc-bumper-puppet { position: absolute; top: 28%; width: 58%; height: 58%; z-index: 8; transform-origin: 50% 90%; }
