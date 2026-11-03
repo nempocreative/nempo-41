@@ -64,3 +64,22 @@ describe('MusiComedy Night rundown times', () => {
     expect(at('Opening Bumper')).toBeGreaterThan(minutes('18.56'));
   });
 });
+
+describe('MusiComedy Night greeting reference (page 2)', () => {
+  const allText = [...rundownGreeting.flatMap((c) => [...c.lines, c.note]), ...rundownGreetingRules].join(' ');
+
+  it('routes every booking question to the event WhatsApp number used on page 1', () => {
+    expect(allText).toContain('0857-2498-1356');
+    expect(rundownGreetingRules.join(' ')).toContain('0857-2498-1356');
+  });
+
+  it('quotes the same prayer-break times the rundown is anchored to', () => {
+    expect(allText).toContain('Maghrib 17.47');
+    expect(allText).toContain('Isya 18.56');
+  });
+
+  it('keeps the greeting free of channels the site does not have', () => {
+    expect(allText).not.toContain('kalamuda.com');
+    expect(allText).toContain('@kalamudacom');
+  });
+});
