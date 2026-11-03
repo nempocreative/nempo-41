@@ -88,7 +88,7 @@ export function MusiComedySapaan() {
 
       <footer className="mc-a5-foot">
         <span>NEMPO GARUT × Kala Muda × Good Story Cafe</span>
-        <span>Halaman 2 dari 2 · acuan sapaan penerima tamu</span>
+        <span>Halaman 2 dari 3 · acuan sapaan penerima tamu</span>
       </footer>
     </main>
   );
