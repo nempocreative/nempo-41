@@ -69,6 +69,50 @@ function SocialGlyph({ icon }: { icon: SocialIcon }) {
   );
 }
 
+// ---- Cultural decoration: wayang & penari silhouettes, drawn inline so they stay crisp in print.
+export function GununganGlyph({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 100 130" className={className} fill="currentColor" aria-hidden="true">
+      <path
+        fillRule="evenodd"
+        d="M50 3C60 22 74 38 82 60c7 19 6 44 4 67H14c-2-23-3-48 4-67C26 38 40 22 50 3Zm-12 124V92c0-12 24-12 24 0v35Z"
+      />
+      <circle cx="50" cy="48" r="7" />
+      <circle cx="50" cy="70" r="4" />
+    </svg>
+  );
+}
+
+export function DancerGlyph({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 100 120" className={className} fill="none" stroke="currentColor" strokeWidth={5} strokeLinecap="round" aria-hidden="true">
+      <path d="M38 22 50 6l12 16Z" fill="currentColor" stroke="none" />
+      <circle cx="50" cy="30" r="8" fill="currentColor" stroke="none" />
+      <path d="M50 38c-5 8-5 17-3 24h6c2-7 2-16-3-24Z" fill="currentColor" stroke="none" />
+      <path d="M47 44C34 42 27 33 31 22" />
+      <path d="M53 44c13-2 20-11 16-22" />
+      <path d="M40 62h20l12 34H28Z" fill="currentColor" stroke="none" />
+      <path d="M44 96l-2 16" />
+      <path d="M56 96l2 16" />
+    </svg>
+  );
+}
+
+export function WayangGlyph({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 100 120" className={className} fill="none" stroke="currentColor" strokeWidth={5} strokeLinecap="round" aria-hidden="true">
+      <path d="M56 24c0-12 16-14 20-4" />
+      <circle cx="64" cy="32" r="11" fill="currentColor" stroke="none" />
+      <path d="M74 32l10 3-10 3Z" fill="currentColor" stroke="none" />
+      <ellipse cx="48" cy="72" rx="26" ry="27" fill="currentColor" stroke="none" />
+      <path d="M62 54c14-4 20-12 18-22" />
+      <path d="M40 98l-2 14" />
+      <path d="M58 98l2 14" />
+    </svg>
+  );
+}
+
+
 function toMinutes(value: string): number {
   const [h, m] = value.trim().split('.');
   return Number(h) * 60 + Number(m);
@@ -94,6 +138,7 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
       style={{ aspectRatio: '210 / 148', fontFamily: "'DM Sans', 'Inter', sans-serif" }}
       aria-label="Rundown MusiComedy Night"
     >
+      <GununganGlyph className="mc-a5-watermark" />
       <header className="mc-a5-head">
         <img src={logoAsset.url} alt="MusiComedy Night" className="mc-a5-logo" />
         <div className="mc-a5-title">
@@ -130,6 +175,13 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
           })}
         </tbody>
       </table>
+      <div className="mc-a5-deco" aria-hidden="true">
+        <DancerGlyph className="mc-a5-deco-figure" />
+        <WayangGlyph className="mc-a5-deco-figure" />
+        <GununganGlyph className="mc-a5-deco-mid" />
+        <WayangGlyph className="mc-a5-deco-figure mc-a5-deco-flip" />
+        <DancerGlyph className="mc-a5-deco-figure mc-a5-deco-flip" />
+      </div>
       <div className="mc-a5-social">
         {rundownBrands.map((b, i) => (
           <Fragment key={b.brand}>
