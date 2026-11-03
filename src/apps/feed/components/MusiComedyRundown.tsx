@@ -1,6 +1,7 @@
 import { Fragment, type RefObject } from 'react';
 import { Globe, Instagram } from 'lucide-react';
 import logoAsset from '@/assets/musicomedy-night-logo.png.asset.json';
+import { MusiComedyDokumentasi } from './MusiComedyDokumentasi';
 import { MusiComedySapaan } from './MusiComedySapaan';
 
 // MusiComedy Night rundown — A5 landscape paper sheet (210×148 mm) in the slide 31–33 palette.
@@ -170,6 +171,8 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
       </main>
       <span className="mc-page-tag">Halaman 2 · Acuan sapaan penerima tamu</span>
       <MusiComedySapaan />
+      <span className="mc-page-tag">Halaman 3 · Acuan dokumentasi foto &amp; video</span>
+      <MusiComedyDokumentasi />
     </div>
   );
 }
