@@ -64,6 +64,7 @@ import { SlideTwentyNineCafeCover } from './components/SlideTwentyNineCafeCover'
 import { SlideThirtySumpahPemuda } from './components/SlideThirtySumpahPemuda';
 import { SlideThirtyOneBackground } from './components/SlideThirtyOneBackground';
 import { SlideThirtyThreeReminder } from './components/SlideThirtyThreeReminder';
+import { MusiComedyRundown } from './components/MusiComedyRundown';
 import { renderNempoSlide20Png } from './lib/renderNempoSlide20Png';
 import {
   GgsBeautySlideOne,
@@ -2643,6 +2644,7 @@ function App() {
     | 'member-card'
     | 'calendar'
     | 'spreadsheet'
+    | 'rundown'
   >('nempo');
   const [activeSlide, setActiveSlide] = useState<FeedSlide>(32);
   const [activeClientSlide, setActiveClientSlide] = useState<ClientSlide>(3);
@@ -2659,6 +2661,7 @@ function App() {
     isNempoFeed && activeSlide >= 20 && activeSlide <= 33;
   const isCoupon = activeFeed === 'coupon';
   const isQCard = activeFeed === 'qcard';
+  const isRundown = activeFeed === 'rundown';
   const isPhotobooth = activeFeed === 'photobooth';
   const isMemberCard = activeFeed === 'member-card';
   const isCalendar = activeFeed === 'calendar';
@@ -3004,6 +3007,19 @@ function App() {
           <button
             type="button"
             role="tab"
+            aria-selected={isRundown}
+            onClick={() => setActiveFeed('rundown')}
+            className={`shrink-0 rounded-full px-4 py-2 text-[11px] font-black transition-colors ${
+              isRundown
+                ? 'bg-[#ffdd00] text-[#062f4d]'
+                : 'text-white/75 hover:text-white'
+            }`}
+          >
+            Rundown MusiComedy
+          </button>
+          <button
+            type="button"
+            role="tab"
             aria-selected={isSpreadsheet}
             onClick={() => setActiveFeed('spreadsheet')}
             className={`shrink-0 rounded-full px-4 py-2 text-[11px] font-black transition-colors ${
@@ -3109,7 +3125,7 @@ function App() {
             Q Card MC
           </button>
         </div>
-        {!isCoupon && !isQCard && !isSpreadsheet && (
+        {!isCoupon && !isQCard && !isSpreadsheet && !isRundown && (
           <div className="mb-3 flex flex-col items-center gap-2">
             {isNempoFeed && preparedNempoPng?.slide === activeSlide ? (
               <>
@@ -3204,6 +3220,8 @@ function App() {
           </Suspense>
         ) : isCoupon ? (
           <GgsCouponDesigner />
+        ) : isRundown ? (
+          <MusiComedyRundown exportRef={exportRef} />
         ) : isQCard ? (
           <GgsQCardCover />
         ) : isMemberCard ? (
@@ -3221,7 +3239,7 @@ function App() {
         ) : (
           <FeedArtwork slide={activeSlide} exportRef={exportRef} />
         )}
-        {!isSpreadsheet && !isCoupon && !isQCard && !isPhotobooth && !isMemberCard && !isCalendar && <div
+        {!isSpreadsheet && !isRundown && !isCoupon && !isQCard && !isPhotobooth && !isMemberCard && !isCalendar && <div
           className="mt-4 flex max-w-[94vw] items-center gap-1 overflow-x-auto rounded-full bg-[#062f4d] p-1 shadow-[0_8px_20px_rgba(0,40,78,0.2)] max-[640px]:mb-4 max-[640px]:gap-0.5 max-[640px]:p-0.5"
           aria-label={
             isGgsStory
