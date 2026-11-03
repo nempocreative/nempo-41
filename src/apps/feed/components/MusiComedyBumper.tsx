@@ -6,7 +6,7 @@ import frame from '@/assets/nempo-feed-slide-31-gamelan-frame-transparent.png.as
 import background from '@/assets/nempo-feed-slide-31-bg.jpg';
 import wayang from '@/assets/musicomedy-bumper-wayang.png';
 import video from '@/assets/musicomedy-bumper.mp4';
-import nempoLogo from '@/assets/nempo-bumper-logo.png.asset.json';
+import nempoLogo from '@/assets/nempo-bumper-logo-transparent.png';
 
 export function MusiComedyBumper() {
   const [playing, setPlaying] = useState(true);
@@ -25,7 +25,7 @@ export function MusiComedyBumper() {
         <img className="mc-bumper-frame" src={frame.url} alt="Bingkai alat musik Sunda, 4 November 2026, Good Story Cafe" />
         <div className="mc-bumper-curtain mc-bumper-curtain-left" aria-hidden="true" />
         <div className="mc-bumper-curtain mc-bumper-curtain-right" aria-hidden="true" />
-        <div className="mc-bumper-nempo"><img src={nempoLogo.url} alt="NEMPO" /></div>
+        <div className="mc-bumper-nempo"><img src={nempoLogo} alt="NEMPO" /></div>
         <div className="mc-bumper-puppet mc-bumper-puppet-left"><img src={wayang} width={1024} height={1536} alt="Wayang membuka panggung dari kiri" /></div>
         <div className="mc-bumper-puppet mc-bumper-puppet-right"><img src={wayang} width={1024} height={1536} alt="Wayang membuka panggung dari kanan" /></div>
         <div className="mc-bumper-title-reveal"><span>NEMPO GARUT × KALA MUDA</span><img src={logo.url} alt="MusiComedy Night" /><strong>SELAMAT MENIKMATI ACARA</strong></div>
