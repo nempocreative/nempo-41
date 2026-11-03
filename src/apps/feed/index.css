@@ -1711,6 +1711,7 @@
 .mc-sapaan-note { margin: 0.4cqw 0 0; font-size: 1.05cqw; font-style: italic; font-weight: 700; color: #9a5a2c; }
 .mc-sapaan-card.is-key { border: 0.2cqw solid #a8262b; background: #f6d9c2; }
 .mc-sapaan-card.is-key .mc-sapaan-note { color: #a8262b; }
+.mc-sapaan-card:last-child { grid-column: 1 / -1; }
 .mc-sapaan-rules { margin-top: auto; padding-top: 0.7cqw; border-top: 0.12cqw solid #e3c69a; display: flex; flex-wrap: wrap; gap: 0.25cqw 1.6cqw; }
 .mc-sapaan-rules span { position: relative; padding-left: 1cqw; font-size: 1.1cqw; font-weight: 800; color: #5e3517; white-space: nowrap; }
 .mc-sapaan-rules span::before { content: '✓'; position: absolute; left: 0; color: #a8262b; font-weight: 900; }

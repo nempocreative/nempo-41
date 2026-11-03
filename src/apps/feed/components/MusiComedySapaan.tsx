@@ -17,16 +17,6 @@ export const rundownGreeting: GreetingCard[] = [
     note: 'Senyum, sapa, lalu arahkan ke kasir.',
   },
   {
-    label: 'Setelah disapa · arahkan ke kasir',
-    lines: [
-      'Silakan ke kasir dulu ya, untuk pesan menu.',
-      'Dari kasir nanti Kak dapat nomor meja.',
-      'Kalau sudah pesan, kami antarkan ke meja sesuai nomor.',
-    ],
-    note: 'Nomor meja keluar dari kasir — jangan menjanjikan lebih dulu.',
-    accent: true,
-  },
-  {
     label: 'Kalau sudah reservasi',
     lines: [
       'Baik, kami cek dulu ya.',

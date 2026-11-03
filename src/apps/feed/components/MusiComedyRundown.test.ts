@@ -85,12 +85,11 @@ describe('MusiComedy Night greeting reference (page 2)', () => {
 });
 
 describe('MusiComedy Night cashier step (page 2)', () => {
-  it('sits straight after the greeting and sends guests to the cashier', () => {
-    expect(rundownGreeting[1].label).toContain('kasir');
-    const kasir = rundownGreeting[1];
-    expect(kasir.lines.join(' ')).toContain('pesan menu');
-    expect(kasir.lines.join(' ')).toContain('nomor meja');
-    expect(kasir.accent).toBe(true);
+  it('sends guests to the cashier for a menu order and a table number', () => {
+    const lines = rundownGreeting[0].lines.join(' ');
+    expect(lines).toContain('kasir');
+    expect(lines).toContain('order');
+    expect(lines).toContain('nomor meja');
   });
 });
 
