@@ -1678,6 +1678,6 @@
 .mc-a5-table td:nth-child(2) { width: 18cqw; font-weight: 800; color: #9a5a2c; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .mc-a5-table td:nth-child(3) { font-weight: 800; }
 .mc-a5-table tbody tr.is-star td { background: #f6d9c2; color: #a8262b; }
-.mc-a5-table tbody tr.is-pray td { background: #f2e2c4; color: #6b3f1e; font-style: italic; border-bottom: 1px dashed #c9a06a; }
+.mc-a5-table tbody tr.is-pray td { background: #ecd6ae; color: #5e3517; font-style: italic; font-weight: 700; border-bottom: 1px dashed #b98c4f; border-top: 1px dashed #b98c4f; }
 .mc-a5-foot { margin-top: auto; display: flex; justify-content: space-between; gap: 2cqw; text-align: right; font-size: 1.15cqw; font-weight: 700; letter-spacing: 0.1em; color: #9a5a2c; }
 @media print { @page { size: A5 landscape; margin: 0; } }
