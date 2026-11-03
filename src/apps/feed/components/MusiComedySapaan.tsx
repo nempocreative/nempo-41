@@ -36,32 +36,6 @@ export const rundownGreeting: GreetingCard[] = [
     note: 'Sebut nama tamu saat mengantar, jangan ditinggal.',
   },
   {
-    label: 'Belum reservasi',
-    lines: [
-      'Boleh, kami catat dulu nama dan jumlah tamunya.',
-      'Kursi sedang penuh — kami masukkan daftar tunggu, ya.',
-      'Atau bisa simpan kursi lewat WhatsApp 0857-2498-1356.',
-    ],
-    note: 'Jangan menjanjikan kursi yang belum tentu ada.',
-  },
-  {
-    label: 'Sering ditanya',
-    lines: [
-      'Masuknya gratis, tanpa tiket.',
-      'Mulai 19.20 WIB, selesai 23.00 WIB.',
-      'Jeda salat: Maghrib 17.47, Isya 18.56 — ±25 menit.',
-    ],
-    note: 'Kalau ragu soal jam, cek rundown halaman 1.',
-  },
-  {
-    label: 'Tamu datang terlambat',
-    lines: [
-      'Silakan, acaranya masih berjalan.',
-      'Kami carikan kursi di pinggir supaya tidak mengganggu.',
-    ],
-    note: 'Jangan menyapa keras saat pertunjukan sedang jalan.',
-  },
-  {
     label: 'Tamu pulang',
     lines: [
       'Terima kasih sudah hadir, mohon maaf kalau ada yang kurang.',
