@@ -159,7 +159,7 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
         ))}
       </div>
       <footer className="mc-a5-foot">
-        <span>NEMPO GARUT × Good Story Cafe</span>
+        <span>NEMPO GARUT × Kala Muda × Good Story Cafe</span>
         <span>Jam dapat maju/mundur ±10 menit</span>
       </footer>
     </main>
