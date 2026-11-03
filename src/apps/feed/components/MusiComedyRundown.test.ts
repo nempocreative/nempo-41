@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { musicomedyRundown, rundownDuration, rundownSocial } from './MusiComedyRundown';
+import { rundownGreeting, rundownGreetingRules } from './MusiComedySapaan';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
