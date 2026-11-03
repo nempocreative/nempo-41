@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { musicomedyRundown } from './MusiComedyRundown';
+import { musicomedyRundown, rundownDuration } from './MusiComedyRundown';
 
 // "17.00 – 17.40" / "17.47" -> minutes after midnight.
 function minutes(value: string): number {
@@ -15,6 +15,12 @@ function span(time: string): { start: number; end: number } {
 describe('MusiComedy Night rundown times', () => {
   it('gives every row a concrete clock time', () => {
     expect(musicomedyRundown.every((row) => /^\d{2}\.\d{2}( – \d{2}\.\d{2})?$/.test(row.time))).toBe(true);
+  });
+
+  it('shows a length in minutes for every row, adzan gaps included', () => {
+    expect(musicomedyRundown.map((_, i) => rundownDuration(i))).toEqual([
+      115, 40, 23, 40, 24, 10, 25, 15, 25, 20, 45, 30, 50,
+    ]);
   });
 
   it('uses the adzan times the owner gave as the prayer-break anchors', () => {

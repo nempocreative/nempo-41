@@ -13,19 +13,35 @@ export const musicomedyRundown: {
   kind?: RundownKind;
 }[] = [
   { time: '15.00 – 16.55', title: 'Gerbang dibuka · tamu datang', note: 'setelah Ashar (14.49)' },
-  { time: '17.00 – 17.40', title: 'Solo Vokal (Sesi 1)', note: 'Berlin · 40 menit' },
+  { time: '17.00 – 17.40', title: 'Solo Vokal (Sesi 1)', note: 'Berlin' },
   { time: '17.47', title: 'Maghrib · jeda salat', note: 'adzan 17.47', kind: 'pray' },
-  { time: '18.10 – 18.50', title: 'Solo Vokal (Sesi 2)', note: 'Berlin · 40 menit' },
+  { time: '18.10 – 18.50', title: 'Solo Vokal (Sesi 2)', note: 'Berlin' },
   { time: '18.56', title: 'Isya · jeda salat', note: 'adzan 18.56', kind: 'pray' },
   { time: '19.20 – 19.30', title: 'Opening Bumper', note: 'penanda acara utama' },
   { time: '19.30 – 19.55', title: 'Musik Etnik Pembuka', note: '3–5 lagu' },
   { time: '19.55 – 20.10', title: 'Opening Tari Mojang', note: 'selamat datang tamu' },
   { time: '20.10 – 20.35', title: 'Tari Jaipong', note: 'Melodi' },
   { time: '20.35 – 20.55', title: 'Musik Etnik', note: '2 lagu' },
-  { time: '20.55 – 21.40', title: 'Guest Star', note: 'Saduli Ragap · 45 menit' },
-  { time: '21.40 – 22.10', title: 'Pencungan', note: '30 menit' },
-  { time: '22.10 – 23.00', title: 'Musik Bebas', note: 'penutup · 50 menit' },
+  { time: '20.55 – 21.40', title: 'Guest Star', note: 'Saduli Ragap' },
+  { time: '21.40 – 22.10', title: 'Pencungan' },
+  { time: '22.10 – 23.00', title: 'Musik Bebas', note: 'penutup' },
 ];
+
+function toMinutes(value: string): number {
+  const [h, m] = value.trim().split('.');
+  return Number(h) * 60 + Number(m);
+}
+
+// Length of a row: its own range, or — for a single adzan time — the gap to the next row.
+export function rundownDuration(index: number): number {
+  const row = musicomedyRundown[index];
+  if (!row) return 0;
+  const [from, to] = row.time.split('–');
+  const start = toMinutes(from);
+  if (to) return toMinutes(to) - start;
+  const next = musicomedyRundown[index + 1];
+  return next ? toMinutes(next.time.split('–')[0]) - start : 0;
+}
 
 export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElement | null> }) {
   let no = 0;
@@ -46,7 +62,7 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
       </header>
       <table className="mc-a5-table">
         <thead>
-          <tr><th>No</th><th>Waktu</th><th>Acara</th><th>Keterangan</th></tr>
+          <tr><th>No</th><th>Waktu</th><th>Acara</th><th>Menit</th><th>Keterangan</th></tr>
         </thead>
         <tbody>
           {musicomedyRundown.map((item, i) => {
@@ -60,6 +76,7 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
                 <td>{pray ? '•' : String(no).padStart(2, '0')}</td>
                 <td>{item.time}</td>
                 <td>{item.title}</td>
+                <td>{rundownDuration(i)} menit</td>
                 <td>{item.note ?? ''}</td>
               </tr>
             );
