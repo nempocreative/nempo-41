@@ -6,7 +6,7 @@ import frame from '@/assets/nempo-feed-slide-31-gamelan-frame-transparent.png.as
 import background from '@/assets/nempo-feed-slide-31-bg.jpg';
 import wayang from '@/assets/musicomedy-bumper-wayang.png';
 import video from '@/assets/musicomedy-bumper.mp4';
-import nempoLogo from '@/assets/nempo-bumper-logo-transparent.png';
+import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
 
 export function MusiComedyBumper() {
   const [playing, setPlaying] = useState(true);
