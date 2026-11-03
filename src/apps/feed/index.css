@@ -1661,7 +1661,7 @@
 
 /* MusiComedy rundown — A5 landscape paper. */
 .mc-a5 {
-  container-type: inline-size; display: flex; flex-direction: column; padding: 3.2cqw 4cqw 2.4cqw;
+  container-type: inline-size; display: flex; flex-direction: column; padding: 5.2cqw 4cqw 2.4cqw;
   background: #fffaf0; color: #3a1d14; border: 0.5cqw solid #a8262b; outline: 0.25cqw solid #e9c58c; outline-offset: -1.4cqw;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
 }
