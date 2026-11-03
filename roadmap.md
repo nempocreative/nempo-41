@@ -13,7 +13,7 @@
 - [x] Akun admin admin@nempogarut.com dibuat; 109 data situs (wisata, kuliner, penginapan, lomba, kamus Sunda) dimasukkan ke database.
 - [x] Data impor lama tidak dipertahankan: setelah remix, wisata, kuliner, penginapan, perlombaan, dan kamus Sunda diverifikasi kosong; jangan impor ulang.
 - [x] Migration Drizzle hasil copy dibersihkan dan set migration kosong disiapkan; 21 tabel database proyek baru jadi baseline, drizzle-kit check lolos.
-- [x] Rundown MusiComedy (kertas A5 mendatar) diberi jam detail berpatokan adzan Ashar 14.49, Maghrib 17.47, Isya 18.56; jam Maghrib/Sesi 2 dan baris jeda salat diuji.
+- [x] Rundown MusiComedy (kertas A5 mendatar) diberi jam detail + kolom menit berpatokan adzan Ashar 14.49, Maghrib 17.47, Isya 18.56; jam Maghrib/Sesi 2, baris jeda salat dan daftar menit diuji.
 
 ## Terbuka
 - [x] Data event saat ini disinkronkan setelah remix: MusiComedy Night aktif, API dan halaman detail terbaca; lima dataset lama tetap kosong.
