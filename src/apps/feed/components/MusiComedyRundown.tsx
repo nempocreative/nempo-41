@@ -151,6 +151,7 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
                       aria-label={`${s.label} ${s.value}`}
                     >
                       <SocialGlyph icon={s.icon} />
+                      <span>{s.value}</span>
                     </a>
                   ))}
               </div>

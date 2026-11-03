@@ -1685,15 +1685,15 @@
 .mc-a5-table td:nth-child(4) { width: 8cqw; text-align: center; white-space: nowrap; font-weight: 700; color: #7a4a2c; }
 .mc-a5-table tbody tr.is-star td { background: #f6d9c2; color: #a8262b; }
 .mc-a5-table tbody tr.is-pray td { background: #ecd6ae; color: #5e3517; font-style: italic; font-weight: 700; border-bottom: 1px dashed #b98c4f; border-top: 1px dashed #b98c4f; }
-.mc-a5-social { margin-top: 1.2cqw; display: flex; align-items: flex-end; justify-content: center; gap: 1.8cqw; }
-.mc-a5-social-group { display: flex; flex-direction: column; align-items: center; gap: 0.5cqw; }
-.mc-a5-social-brand { font-size: 1.05cqw; font-weight: 900; letter-spacing: 0.22em; color: #a8262b; }
-.mc-a5-social-pills { display: flex; gap: 0.9cqw; }
-.mc-a5-social-sep { width: 0.12cqw; align-self: stretch; background: #e3c69a; border-radius: 2px; }
-.mc-a5-pill { display: inline-flex; align-items: center; justify-content: center; width: 3.6cqw; height: 3.6cqw; border: 0.12cqw solid #c98f3f; border-radius: 50%; background: #fdf1dc; color: #a8262b; text-decoration: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.mc-a5-pill svg { width: 1.95cqw; height: 1.95cqw; display: block; }
-.mc-a5-social-group:last-child .mc-a5-social-brand { color: #a62f78; }
-.mc-a5-social-group:last-child .mc-a5-pill { border-color: #c9a2d6; background: #f7eef8; color: #a62f78; }
+.mc-a5-social { margin-top: 1.1cqw; padding-top: 0.9cqw; border-top: 0.12cqw solid #e3c69a; display: flex; align-items: center; justify-content: center; gap: 1.6cqw; }
+.mc-a5-social-group { display: flex; align-items: center; gap: 1.1cqw; }
+.mc-a5-social-brand { font-size: 1.05cqw; font-weight: 900; letter-spacing: 0.18em; color: #a8262b; white-space: nowrap; }
+.mc-a5-social-pills { display: flex; flex-wrap: nowrap; gap: 1.1cqw; }
+.mc-a5-social-sep { width: 0.12cqw; height: 1.8cqw; background: #e3c69a; }
+.mc-a5-pill { display: inline-flex; align-items: center; gap: 0.4cqw; font-size: 1.1cqw; font-weight: 700; color: #5e3517; text-decoration: none; white-space: nowrap; }
+.mc-a5-pill svg { width: 1.3cqw; height: 1.3cqw; display: block; color: #a8262b; flex: none; }
+.mc-a5-social-group:last-child .mc-a5-social-brand,
+.mc-a5-social-group:last-child .mc-a5-pill svg { color: #a62f78; }
 .mc-a5-foot { margin-top: auto; display: flex; justify-content: space-between; gap: 2cqw; text-align: right; font-size: 1.15cqw; font-weight: 700; letter-spacing: 0.1em; color: #9a5a2c; }
 /* Print: only the A5 sheet, exactly one page — app chrome stays off the paper. */
 @media print {
