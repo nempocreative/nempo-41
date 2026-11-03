@@ -93,3 +93,11 @@ describe('MusiComedy Night cashier step (page 2)', () => {
     expect(kasir.accent).toBe(true);
   });
 });
+
+describe('MusiComedy Night greeting wording', () => {
+  it('addresses guests as Kak, never Bapak/Ibu', () => {
+    const text = rundownGreeting.flatMap((c) => [...c.lines, c.note]).join(' ');
+    expect(text).not.toContain('Bapak');
+    expect(text).toContain('Kak');
+  });
+});

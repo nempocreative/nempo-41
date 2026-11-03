@@ -20,7 +20,7 @@ export const rundownGreeting: GreetingCard[] = [
     label: 'Setelah disapa · arahkan ke kasir',
     lines: [
       'Silakan ke kasir dulu ya, untuk pesan menu.',
-      'Dari kasir nanti Bapak/Ibu dapat nomor meja.',
+      'Dari kasir nanti Kak dapat nomor meja.',
       'Kalau sudah pesan, kami antarkan ke meja sesuai nomor.',
     ],
     note: 'Nomor meja keluar dari kasir — jangan menjanjikan lebih dulu.',
@@ -30,7 +30,7 @@ export const rundownGreeting: GreetingCard[] = [
     label: 'Sudah reservasi',
     lines: [
       'Baik, kami cek dulu ya.',
-      'Sudah tercatat atas nama … — silakan, ini kursi Bapak/Ibu.',
+      'Sudah tercatat atas nama … — silakan, ini kursi Kak.',
       'Acara mulai 19.20 WIB. Selamat menikmati.',
     ],
     note: 'Sebut nama tamu saat mengantar, jangan ditinggal.',
