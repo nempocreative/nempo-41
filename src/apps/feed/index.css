@@ -1609,7 +1609,7 @@
   display: grid; place-items: center; width: 3.4cqw; height: 3.4cqw; border-radius: 1cqw;
   background: #fff; color: #0a6fc2; font-weight: 900; font-size: 2.2cqw;
 }
-.s33-web-poster { display: block; width: 100%; aspect-ratio: 4 / 3.6; object-fit: cover; object-position: top; }
+.s33-web-poster { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; }
 .s33-web-body { padding: 1.8cqw 2.2cqw; }
 .s33-web-tags { display: flex; gap: 1cqw; align-items: center; font-size: 1.15cqw; font-weight: 800; color: #9a5a2c; letter-spacing: 0.05em; }
 .s33-web-free { padding: 0.2cqw 0.9cqw; border-radius: 999px; background: #f3e4d6; }
