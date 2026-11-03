@@ -27,6 +27,14 @@ export const musicomedyRundown: {
   { time: '22.10 – 23.00', title: 'Musik Bebas', note: 'penutup' },
 ];
 
+// NEMPO's own channels, taken from the site footer (layout.tsx) and the MusiComedy reservation line.
+export const rundownSocial: { label: string; value: string; href: string }[] = [
+  { label: 'Instagram', value: '@nempo.id', href: 'https://instagram.com/nempo.id' },
+  { label: 'TikTok', value: '@nempo.id', href: 'https://tiktok.com/@nempo.id' },
+  { label: 'Website', value: 'nempo.id', href: 'https://nempo.id' },
+  { label: 'WhatsApp', value: '0857-2498-1356', href: 'https://wa.me/6285724981356' },
+];
+
 function toMinutes(value: string): number {
   const [h, m] = value.trim().split('.');
   return Number(h) * 60 + Number(m);
@@ -83,6 +91,14 @@ export function MusiComedyRundown({ exportRef }: { exportRef: RefObject<HTMLElem
           })}
         </tbody>
       </table>
+      <div className="mc-a5-social">
+        {rundownSocial.map((s) => (
+          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="mc-a5-pill">
+            <b>{s.label}</b>
+            <span>{s.value}</span>
+          </a>
+        ))}
+      </div>
       <footer className="mc-a5-foot">
         <span>NEMPO GARUT × Good Story Cafe</span>
         <span>Jam dapat maju/mundur ±10 menit</span>
