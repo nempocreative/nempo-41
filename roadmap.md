@@ -20,6 +20,7 @@
 - [x] Halaman 3 rundown: acuan dokumentasi — dua kolom berjarak dan bergaris pemisah, FOTO (sebelum acara, saat pertunjukan, wajib kepotret) di kiri dan VIDEO (sebelum acara, saat pertunjukan, video pendek reels & story) di kanan; kartu serah terima & unggah melebar di bawah, plus empat aturan; kalimatnya masih draf yang menunggu koreksi pemilik. Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
 
 ## Terbuka
+- [ ] Revisi bumper: pembukaan wayang bergerak, judul acara muncul besar di tengah; render ulang MP4 3:4.
 - [x] Bumper Acara MusiComedy: tombol di Nempo Feed, animasi 3:4 dan MP4 1080×1440, 12 detik, 30 fps; tombol jeda/ulang dan tampilan ponsel diperiksa. Ukuran dijelaskan kepada pengguna.
 - [x] Data event saat ini disinkronkan setelah remix: MusiComedy Night aktif, API dan halaman detail terbaca; lima dataset lama tetap kosong.
 - [ ] Unduh ekspor database lengkap terbaru: menunggu pengguna menjalankan Export data di More → Database → Manage → Settings.
