@@ -1,11 +1,11 @@
 {
-  "asset_id": "f7d6fa32-4e72-4e0d-879b-913df4bc3465",
-  "content_type": "image/png",
-  "created_at": "2026-11-03T13:37:32Z",
-  "original_filename": "nempo-feed-slide-31-gamelan-frame-transparent.png",
+  "version": 1,
+  "asset_id": "de8b7db5-d577-4246-a4ff-5a6d99d80f16",
   "project_id": "b86cc284-f93b-44e3-a327-505a482f76b1",
-  "r2_key": "a/v1/b86cc284-f93b-44e3-a327-505a482f76b1/f7d6fa32-4e72-4e0d-879b-913df4bc3465/nempo-feed-slide-31-gamelan-frame-transparent.png",
+  "url": "/__l5e/assets-v1/de8b7db5-d577-4246-a4ff-5a6d99d80f16/nempo-feed-slide-31-gamelan-frame-transparent.png",
+  "r2_key": "a/v1/b86cc284-f93b-44e3-a327-505a482f76b1/de8b7db5-d577-4246-a4ff-5a6d99d80f16/nempo-feed-slide-31-gamelan-frame-transparent.png",
+  "original_filename": "nempo-feed-slide-31-gamelan-frame-transparent.png",
   "size": 2736004,
-  "url": "/__l5e/assets-v1/f7d6fa32-4e72-4e0d-879b-913df4bc3465/nempo-feed-slide-31-gamelan-frame-transparent.png",
-  "version": 1
+  "content_type": "image/png",
+  "created_at": "2026-11-03T18:53:13Z"
 }
