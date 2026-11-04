@@ -20,7 +20,7 @@
 - [x] Halaman 3 rundown: acuan dokumentasi — dua kolom berjarak dan bergaris pemisah, FOTO (sebelum acara, saat pertunjukan, wajib kepotret) di kiri dan VIDEO (sebelum acara, saat pertunjukan, video pendek reels & story) di kanan; kartu serah terima & unggah melebar di bawah, plus empat aturan; kalimatnya masih draf yang menunggu koreksi pemilik. Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
 
 ## Terbuka
-- [ ] Revisi bumper: logo NEMPO dinaikkan dan hanya muncul di bagian depan, foto pengisi acara diperbesar, tanggal & lokasi hanya di bagian depan, siluet penari dihapus, tirai tetap terbuka sampai akhir; MP4 1080×1440 direkam ulang.
+- [x] Revisi bumper: logo NEMPO dinaikkan dan hanya muncul di bagian depan, foto pengisi acara diperbesar, tanggal & lokasi hanya di bagian depan, siluet penari dihapus, tirai tetap terbuka sampai akhir; MP4 1080×1440 direkam ulang.
 - [x] Alat musik pada bumper dihapus; siluet penari ditambahkan di latar, logo NEMPO diperbesar, dan jarak teks judul dengan footer dirapikan; MP4 1080×1440 diperbarui dan diunggah ulang.
 - [x] Bingkai bumper dihapus; angklung bergoyang, gong berayun, kendang melompat; MP4 diperbarui dan tombol unduh diuji.
 - [x] Rapikan bumper: logo putih asli kiriman pengguna muncul setelah tirai terbuka lalu judul acara; MP4 1080×1440 diperbarui dan unduhan diuji.
