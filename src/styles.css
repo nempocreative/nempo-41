@@ -25,11 +25,13 @@
 .mc-bumper-stage * { letter-spacing: 0; }
 .mc-bumper-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
 .mc-bumper-backdrop { animation: mc-bumper-back 12s linear infinite; }
-.mc-bumper-penari { position: absolute; z-index: 2; pointer-events: none; animation: mc-penari-sway 3.2s ease-in-out infinite; }
-.mc-bumper-penari img { width: 100%; height: 100%; object-fit: contain; opacity: .3; filter: drop-shadow(0 0 1cqw rgba(0,0,0,.35)); }
-.mc-bumper-penari-left { left: 3%; bottom: 10%; width: 24%; height: 52%; }
-.mc-bumper-penari-right { right: 3%; bottom: 10%; width: 24%; height: 52%; transform: scaleX(-1); animation-delay: -1.6s; }
-@keyframes mc-penari-sway { 0%,100% { transform: rotate(-3deg) translateY(0); } 50% { transform: rotate(3deg) translateY(-4px); } }
+.mc-bumper-dance { position: absolute; z-index: 2; pointer-events: none; bottom: 14%; width: 29%; aspect-ratio: 270 / 340; opacity: 0; animation: mc-dance-ending 12s ease-in-out infinite; }
+.mc-bumper-dance-left { left: 1%; }
+.mc-bumper-dance-right { right: 1%; transform: scaleX(-1); }
+.mc-bumper-dance-sprite { width: 100%; height: 100%; background-size: 1200% 600%; background-repeat: no-repeat; animation: mc-dance-frames 1s steps(12, end) infinite, mc-dance-rows 6s steps(6, end) infinite; }
+@keyframes mc-dance-frames { from { background-position-x: 0%; } to { background-position-x: 109.090909%; } }
+@keyframes mc-dance-rows { from { background-position-y: 0%; } to { background-position-y: 120%; } }
+@keyframes mc-dance-ending { 0%,50% { opacity: 0; } 60%,87% { opacity: .55; } 94%,100% { opacity: 0; } }
 
 .mc-bumper-event { position: absolute; left: 12%; right: 12%; bottom: 4%; display: flex; flex-direction: column; align-items: center; gap: 1cqw; text-align: center; z-index: 6; animation: mc-instrument-enter 12s ease-in-out infinite; }
 .mc-bumper-event strong { color: var(--bumper-gold); font-size: 3.4cqw; }
@@ -81,6 +83,7 @@
   .mc-bumper-intro, .mc-bumper-performers { display: none; }
   .mc-bumper-curtain, .mc-bumper-puppet { display: none; }
   .mc-bumper-nempo { top: 18%; }
+  .mc-bumper-dance { opacity: .3; }
 }
 
 /* The venue reservation tool keeps its palette local to the event page. */

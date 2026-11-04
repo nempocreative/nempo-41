@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Download, Pause, Play, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import logo from '@/assets/musicomedy-night-logo.png.asset.json';
-import penari from '@/assets/bumper-penari.png';
+import penari from '@/assets/jaipong-silhouette.png';
 
 import background from '@/assets/nempo-feed-slide-31-bg.jpg';
 import wayang from '@/assets/musicomedy-bumper-wayang.png';
@@ -23,8 +23,8 @@ export function MusiComedyBumper() {
       </div>
       <div key={version} className={`mc-bumper-stage${playing ? '' : ' is-paused'}`} aria-label="Bumper MusiComedy Night 3:4">
         <img className="mc-bumper-backdrop" src={background} alt="" />
-        <div className="mc-bumper-penari mc-bumper-penari-left" aria-hidden="true"><img src={penari} alt="" /></div>
-        <div className="mc-bumper-penari mc-bumper-penari-right" aria-hidden="true"><img src={penari} alt="" /></div>
+        <div className="mc-bumper-dance mc-bumper-dance-left" aria-hidden="true"><div className="mc-bumper-dance-sprite" style={{ backgroundImage: `url(${penari})` }} /></div>
+        <div className="mc-bumper-dance mc-bumper-dance-right" aria-hidden="true"><div className="mc-bumper-dance-sprite" style={{ backgroundImage: `url(${penari})` }} /></div>
 
         <div className="mc-bumper-curtain mc-bumper-curtain-left" aria-hidden="true" />
         <div className="mc-bumper-curtain mc-bumper-curtain-right" aria-hidden="true" />

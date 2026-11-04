@@ -11,6 +11,7 @@
 
 ## Architecture rules
 - MusiComedy's opening bumper lives in its own feed tab with a 3:4 animated stage and a pre-rendered MP4 download; why: event playback and export must match without changing existing slides.
+- Bumper dancer footage is person-matted into a transparent sprite atlas with CSS-stepped frames; why: original motion stays deterministic in preview, pause/replay, and MP4 capture without video seeking drift.
 - Some subdirectories have their own `AGENTS.md` (`src/assets/`, `src/data/`, `src/apps/`, `src/apps/cms/`, `drizzle/`); read the nearest one before changing files there; why: those rules are scoped to that folder and keep this file short.
 - Event saweran uses the original uploaded QRIS asset in EventSaweran, scoped to MusiComedy Night, with same-origin download and enlargement; why: preserve payment-code integrity without implying automatic payment verification.
 - EventLocation renders provided map embeds with browser-safe venue destinations in event-location data; why: supplied venue links remain reproducible after remix without a new map provider.

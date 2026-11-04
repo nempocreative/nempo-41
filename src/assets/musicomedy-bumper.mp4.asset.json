@@ -1,11 +1,11 @@
 {
-  "asset_id": "d7230e29-35c8-426e-be65-e0124e90e565",
-  "content_type": "video/mp4",
-  "created_at": "2026-11-03T21:28:37Z",
-  "original_filename": "musicomedy-bumper.mp4",
+  "version": 1,
+  "asset_id": "b0fa99f8-4b89-4fe6-b8cb-ebedcce23f1c",
   "project_id": "abde540b-b119-4bad-b565-40f7d0399a84",
-  "r2_key": "a/v1/abde540b-b119-4bad-b565-40f7d0399a84/d7230e29-35c8-426e-be65-e0124e90e565/musicomedy-bumper.mp4",
-  "size": 5670733,
-  "url": "/__l5e/assets-v1/d7230e29-35c8-426e-be65-e0124e90e565/musicomedy-bumper.mp4",
-  "version": 1
+  "url": "/__l5e/assets-v1/b0fa99f8-4b89-4fe6-b8cb-ebedcce23f1c/musicomedy-bumper.mp4",
+  "r2_key": "a/v1/abde540b-b119-4bad-b565-40f7d0399a84/b0fa99f8-4b89-4fe6-b8cb-ebedcce23f1c/musicomedy-bumper.mp4",
+  "original_filename": "musicomedy-bumper.mp4",
+  "size": 6034261,
+  "content_type": "video/mp4",
+  "created_at": "2026-11-04T02:34:15Z"
 }
