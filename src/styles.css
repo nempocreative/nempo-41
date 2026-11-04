@@ -45,9 +45,9 @@
 .mc-bumper-intro strong, .mc-bumper-welcome strong { margin-top: 2.5cqw; font-size: 11cqw; line-height: 1.03; font-weight: 900; text-shadow: 0 3px 0 var(--bumper-red); }
 .mc-bumper-stage em { font-style: normal; color: var(--bumper-gold); }
 .mc-bumper-intro { animation: mc-bumper-intro 12s ease-in-out infinite; }
-.mc-bumper-performers { position: absolute; inset: 31% 9% 19%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; animation: mc-bumper-talent 12s ease-in-out infinite; }
+.mc-bumper-performers { position: absolute; inset: 28% 6% 19%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; animation: mc-bumper-talent 12s ease-in-out infinite; }
 .mc-bumper-performers > span { letter-spacing: 0.35em; }
-.mc-bumper-performers img { width: 100%; height: 64%; object-fit: contain; object-position: bottom; }
+.mc-bumper-performers img { width: 100%; height: 71%; object-fit: contain; object-position: bottom; }
 .mc-bumper-performers strong { font-size: 4.4cqw; font-weight: 900; color: var(--bumper-gold); text-shadow: 0 2px 0 var(--bumper-red); margin-top: 1.6cqw; }
 .mc-bumper-welcome { animation: mc-bumper-end 12s ease-in-out infinite; }
 .mc-bumper-welcome strong { font-size: 9.3cqw; }
