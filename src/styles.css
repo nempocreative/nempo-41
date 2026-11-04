@@ -25,19 +25,12 @@
 .mc-bumper-stage * { letter-spacing: 0; }
 .mc-bumper-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
 .mc-bumper-backdrop { animation: mc-bumper-back 12s linear infinite; }
-.mc-bumper-dance { position: absolute; z-index: 2; pointer-events: none; bottom: 14%; width: 29%; aspect-ratio: 270 / 340; opacity: 0; animation: mc-dance-ending 12s ease-in-out infinite; }
-.mc-bumper-dance-left { left: 1%; }
-.mc-bumper-dance-right { right: 1%; transform: scaleX(-1); }
-.mc-bumper-dance-sprite { width: 100%; height: 100%; background-size: 1200% 600%; background-repeat: no-repeat; animation: mc-dance-frames 1s steps(12, end) infinite, mc-dance-rows 6s steps(6, end) infinite; }
-@keyframes mc-dance-frames { from { background-position-x: 0%; } to { background-position-x: 109.090909%; } }
-@keyframes mc-dance-rows { from { background-position-y: 0%; } to { background-position-y: 120%; } }
-@keyframes mc-dance-ending { 0%,50% { opacity: 0; } 60%,87% { opacity: .55; } 94%,100% { opacity: 0; } }
 
 .mc-bumper-event { position: absolute; left: 12%; right: 12%; bottom: 4%; display: flex; flex-direction: column; align-items: center; gap: 1cqw; text-align: center; z-index: 6; animation: mc-instrument-enter 12s ease-in-out infinite; }
 .mc-bumper-event strong { color: var(--bumper-gold); font-size: 3.4cqw; }
 .mc-bumper-event span { font-size: 3cqw; font-weight: 800; }
 .mc-bumper-event small { font-size: 2.4cqw; }
-@keyframes mc-instrument-enter { 0%,33% { opacity: 0; transform: translateY(30px) scale(.6); } 43%,87% { opacity: 1; transform: translateY(0) scale(1); } 94%,100% { opacity: 0; transform: translateY(15px) scale(.8); } }
+@keyframes mc-instrument-enter { 0%,38% { opacity: 0; transform: translateY(30px) scale(.6); } 46%,62% { opacity: 1; transform: translateY(0) scale(1); } 70%,100% { opacity: 0; transform: translateY(15px) scale(.8); } }
 .mc-bumper-brand { position: absolute; left: 24%; top: 15%; width: 52%; z-index: 6; animation: mc-bumper-logo 12s ease-in-out infinite; }
 .mc-bumper-brand img { width: 100%; display: block; }
 .mc-bumper-intro, .mc-bumper-welcome { position: absolute; inset: 37% 12% 16%; display: flex; flex-direction: column; align-items: center; text-align: center; z-index: 3; }
@@ -45,10 +38,10 @@
 .mc-bumper-intro strong, .mc-bumper-welcome strong { margin-top: 2.5cqw; font-size: 11cqw; line-height: 1.03; font-weight: 900; text-shadow: 0 3px 0 var(--bumper-red); }
 .mc-bumper-stage em { font-style: normal; color: var(--bumper-gold); }
 .mc-bumper-intro { animation: mc-bumper-intro 12s ease-in-out infinite; }
-.mc-bumper-performers { position: absolute; inset: 28% 6% 19%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; animation: mc-bumper-talent 12s ease-in-out infinite; }
+.mc-bumper-performers { position: absolute; inset: 28% 3% 16%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; animation: mc-bumper-talent 12s ease-in-out infinite; }
 .mc-bumper-performers > span { letter-spacing: 0.35em; }
-.mc-bumper-performers img { width: 100%; height: 71%; object-fit: contain; object-position: bottom; }
-.mc-bumper-performers strong { font-size: 4.4cqw; font-weight: 900; color: var(--bumper-gold); text-shadow: 0 2px 0 var(--bumper-red); margin-top: 1.6cqw; }
+.mc-bumper-performers img { width: 100%; height: 80%; object-fit: contain; object-position: bottom; }
+.mc-bumper-performers strong { font-size: 4.8cqw; font-weight: 900; color: var(--bumper-gold); text-shadow: 0 2px 0 var(--bumper-red); margin-top: 1.6cqw; }
 .mc-bumper-welcome { animation: mc-bumper-end 12s ease-in-out infinite; }
 .mc-bumper-welcome strong { font-size: 9.3cqw; }
 .mc-bumper-welcome p { font-size: 3cqw; font-weight: 900; color: var(--bumper-gold); margin-top: 4cqw; }
@@ -57,9 +50,9 @@
 .mc-bumper-curtain { position: absolute; top: 0; bottom: 0; width: 51%; z-index: 7; background: repeating-linear-gradient(90deg, var(--bumper-red), color-mix(in oklab, var(--bumper-red) 55%, var(--bumper-ink)) 12%, var(--bumper-red) 24%); border-bottom: 3cqw solid var(--bumper-gold); }
 .mc-bumper-curtain-left { left: 0; animation: mc-curtain-left 12s ease-in-out infinite; }
 .mc-bumper-curtain-right { right: 0; animation: mc-curtain-right 12s ease-in-out infinite; }
-.mc-bumper-nempo { position: absolute; left: 30%; top: 15%; width: 40%; z-index: 6; animation: mc-nempo-opening 12s ease-in-out infinite; }
+.mc-bumper-nempo { position: absolute; left: 29%; top: 6%; width: 42%; z-index: 6; animation: mc-nempo-opening 12s ease-in-out infinite; }
 .mc-bumper-nempo img { display: block; width: 100%; height: auto; }
-@keyframes mc-nempo-opening { 0%,33% { opacity: 0; transform: translateY(12px) scale(.85); } 43%,85% { opacity: 1; transform: translateY(0) scale(1); } 94%,100% { opacity: 0; transform: translateY(-8px) scale(1); } }
+@keyframes mc-nempo-opening { 0%,33% { opacity: 0; transform: translateY(12px) scale(.85); } 43%,66% { opacity: 1; transform: translateY(0) scale(1); } 72%,100% { opacity: 0; transform: translateY(-8px) scale(1); } }
 .mc-bumper-puppet { position: absolute; top: 28%; width: 58%; height: 58%; z-index: 8; transform-origin: 50% 90%; }
 .mc-bumper-puppet img { width: 100%; height: 100%; object-fit: contain; }
 .mc-bumper-puppet-left { left: -2%; animation: mc-puppet-left 12s ease-in-out infinite; }
@@ -69,8 +62,8 @@
 .mc-bumper-title-reveal img { width: 100%; height: auto; }
 .mc-bumper-title-reveal span { font-size: 2.7cqw; color: var(--bumper-gold); font-weight: 900; }
 .mc-bumper-title-reveal strong { font-size: 2.6cqw; color: var(--bumper-paper); font-weight: 900; }
-@keyframes mc-curtain-left { 0%,10% { transform: translateX(0); } 32%,92% { transform: translateX(-100%); } 100% { transform: translateX(0); } }
-@keyframes mc-curtain-right { 0%,10% { transform: translateX(0); } 32%,92% { transform: translateX(100%); } 100% { transform: translateX(0); } }
+@keyframes mc-curtain-left { 0%,10% { transform: translateX(0); } 32%,100% { transform: translateX(-100%); } }
+@keyframes mc-curtain-right { 0%,10% { transform: translateX(0); } 32%,100% { transform: translateX(100%); } }
 @keyframes mc-puppet-left { 0% { transform: translateX(12%) rotate(-8deg); } 10% { transform: translateX(10%) rotate(5deg); } 33% { transform: translateX(-72%) rotate(-14deg); } 45%,80% { transform: translateX(-82%) rotate(-8deg); } 92% { transform: translateX(-72%) rotate(-14deg); } 100% { transform: translateX(12%) rotate(-8deg); } }
 @keyframes mc-puppet-right { 0% { transform: translateX(-12%) rotate(8deg); } 10% { transform: translateX(-10%) rotate(-5deg); } 33% { transform: translateX(72%) rotate(14deg); } 45%,80% { transform: translateX(82%) rotate(8deg); } 92% { transform: translateX(72%) rotate(14deg); } 100% { transform: translateX(-12%) rotate(8deg); } }
 @keyframes mc-title-reveal { 0%,38% { opacity: 0; transform: scale(.65) translateY(20px); filter: blur(8px); } 52% { opacity: 1; transform: scale(1.04) translateY(0); filter: blur(0); } 60%,62% { opacity: 1; transform: scale(1); filter: blur(0); } 68%,100% { opacity: 0; transform: scale(.9); filter: blur(0); } }
@@ -85,7 +78,6 @@
   .mc-bumper-intro { display: none; }
   .mc-bumper-curtain, .mc-bumper-puppet { display: none; }
   .mc-bumper-nempo { top: 18%; }
-  .mc-bumper-dance { opacity: .3; }
 }
 
 /* The venue reservation tool keeps its palette local to the event page. */
